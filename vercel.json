@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
@@ -11,8 +14,5 @@
       "source": "/(.*)",
       "headers": [{ "key": "X-Frame-Options", "value": "ALLOWALL" }]
     }
-  ],
-  "rewrites": [
-    { "source": "/live/:path*", "destination": "/live/:path*" }
   ]
 }

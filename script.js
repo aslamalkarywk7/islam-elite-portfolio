@@ -2,6 +2,8 @@ const projects = [
   {
     id: "aetheria",
     folder: "aetheria---glassmorphism-2.0-platform",
+    cover: "covers/aetheria.svg",
+    docs: ["live/aetheria---glassmorphism-2.0-platform/README.md"],
     title: { ar: "Aetheria — Glassmorphism 2.0", en: "Aetheria — Glassmorphism 2.0" },
     subtitle: { ar: "منصة تقنية مستقبلية", en: "Future-Tech Platform" },
     kicker: "GLASSMORPHISM 2.0",
@@ -15,6 +17,8 @@ const projects = [
   {
     id: "industrial",
     folder: "industrial-marketplace-platform",
+    cover: "covers/industrial.jpg",
+    docs: ["live/industrial-marketplace-platform/README.md"],
     title: { ar: "أجماس — منصة الاستثمار الصناعي", en: "Ajmas — Industrial Investment" },
     subtitle: { ar: "سوق صناعي ذكي للمغرب", en: "Morocco Smart Marketplace" },
     kicker: "MARKETPLACE OS",
@@ -28,6 +32,8 @@ const projects = [
   {
     id: "atrium",
     folder: "design-dashboard-pro",
+    cover: "covers/atrium.jpg",
+    docs: ["live/design-dashboard-pro/README.md"],
     title: { ar: "Atrium — ذكاء السوق الصناعي", en: "Atrium — Industrial OS" },
     subtitle: { ar: "نظام إدارة العطاءات", en: "Bid Management OS" },
     kicker: "ENTERPRISE DASHBOARD",
@@ -41,6 +47,8 @@ const projects = [
   {
     id: "zenith",
     folder: "zenith-finance",
+    cover: "covers/zenith.jpg",
+    docs: ["live/zenith-finance/README.md"],
     title: { ar: "Zenith Finance", en: "Zenith Finance" },
     subtitle: { ar: "إدارة ثروات — Neumorphism 2.0", en: "Wealth Management — Soft UI" },
     kicker: "NEUMORPHISM 2.0",
@@ -54,6 +62,8 @@ const projects = [
   {
     id: "oman",
     folder: "dashboard-website",
+    cover: "covers/oman.svg",
+    docs: ["live/dashboard-website/README.md"],
     title: { ar: "Oman Luxury Dash", en: "Oman Luxury Dash" },
     subtitle: { ar: "لوحة EVM للفلل الفاخرة", en: "EVM Villa Dashboard" },
     kicker: "LUXURY DASHBOARD",
@@ -67,6 +77,8 @@ const projects = [
   {
     id: "audio",
     folder: "audio-engine-pro",
+    cover: "covers/audio.jpg",
+    docs: ["live/audio-engine-pro/README.md"],
     title: { ar: "Audio Engine Pro", en: "Audio Engine Pro" },
     subtitle: { ar: "كونسول مزج صوتي احترافي", en: "Skeuomorphic Mixing Console" },
     kicker: "SKEUOMORPHIC",
@@ -80,6 +92,8 @@ const projects = [
   {
     id: "bauhaus",
     folder: "bauhaus-1919---creative-design-studio-1-",
+    cover: "covers/bauhaus.jpg",
+    docs: ["live/bauhaus-1919---creative-design-studio-1-/README.md"],
     title: { ar: "BAUHAUS 1919", en: "BAUHAUS 1919" },
     subtitle: { ar: "استوديو تصميم إبداعي", en: "Creative Design Studio" },
     kicker: "BAUHAUS GRID",
@@ -93,6 +107,8 @@ const projects = [
   {
     id: "maison",
     folder: "luxury-creative-agency",
+    cover: "covers/luxury.jpg",
+    docs: ["live/luxury-creative-agency/README.md"],
     title: { ar: "MAISON NOIR", en: "MAISON NOIR" },
     subtitle: { ar: "وكالة إبداعية فاخرة", en: "Luxury Creative Agency" },
     kicker: "EDITORIAL LUXURY",
@@ -106,6 +122,8 @@ const projects = [
   {
     id: "raw",
     folder: "raw-brutalist-creative-studio",
+    cover: "covers/raw.jpg",
+    docs: ["live/raw-brutalist-creative-studio/README.md"],
     title: { ar: "RAW Brutalist Studio", en: "RAW Brutalist Studio" },
     subtitle: { ar: "استوديو Brutalist خام", en: "Neo-Brutalist Studio" },
     kicker: "NEO-BRUTALIST",
@@ -119,6 +137,8 @@ const projects = [
   {
     id: "grid",
     folder: "grid-studio---swiss-design-system",
+    cover: "covers/grid.jpg",
+    docs: ["live/grid-studio---swiss-design-system/README.md"],
     title: { ar: "GRID STUDIO — Swiss System", en: "GRID STUDIO — Swiss System" },
     subtitle: { ar: "نظام تصميم سويسري", en: "Swiss Typographic System" },
     kicker: "SWISS GRID",
@@ -132,6 +152,8 @@ const projects = [
   {
     id: "retrowave",
     folder: "retrowave-studio",
+    cover: "covers/retrowave.svg",
+    docs: ["live/retrowave-studio/README.md"],
     title: { ar: "RetroWave Studio", en: "RetroWave Studio" },
     subtitle: { ar: "Memphis Design Studio", en: "Memphis Design Studio" },
     kicker: "MEMPHIS NEON",
@@ -145,6 +167,8 @@ const projects = [
   {
     id: "chroma",
     folder: "studio-chroma",
+    cover: "covers/chroma.jpg",
+    docs: ["live/studio-chroma/README.md"],
     title: { ar: "Studio Chroma", en: "Studio Chroma" },
     subtitle: { ar: "Material 3 Bento Portfolio", en: "Material 3 Bento Portfolio" },
     kicker: "MATERIAL 3",
@@ -158,6 +182,8 @@ const projects = [
   {
     id: "connective",
     folder: "flat-design-website",
+    cover: "covers/flat.svg",
+    docs: ["live/flat-design-website/README.md"],
     title: { ar: "Connective Agency", en: "Connective Agency" },
     subtitle: { ar: "وكالة Flat Design", en: "Flat Design Agency" },
     kicker: "FLAT DESIGN",
@@ -171,6 +197,8 @@ const projects = [
   {
     id: "analog",
     folder: "analog-antiques",
+    cover: "covers/analog.jpg",
+    docs: ["live/analog-antiques/README.md"],
     title: { ar: "Analog Antiques", en: "Analog Antiques" },
     subtitle: { ar: "أرشيف شرائط كاسيت", en: "Vintage Cassette Archive" },
     kicker: "RETRO ANALOG",
@@ -184,6 +212,8 @@ const projects = [
   {
     id: "arabicChat",
     folder: "arabic-chat-ui-ux-design-website",
+    cover: "covers/arabic-chat.jpg",
+    docs: ["live/arabic-chat-ui-ux-design-website/README.md"],
     title: { ar: "شات العرب", en: "Arab Chat Platform" },
     subtitle: { ar: "غرف دردشة عربية RTL", en: "Arabic Chat Rooms RTL" },
     kicker: "RTL CHAT OS",
@@ -197,6 +227,8 @@ const projects = [
   {
     id: "clinics",
     folder: "clinics-portfolio-design",
+    cover: "covers/clinics.jpg",
+    docs: ["live/clinics-portfolio-design/readme.md"],
     title: { ar: "عيادات النخبة الطبية", en: "Elite Medical Clinics" },
     subtitle: { ar: "بورتفوليو طبي فاخر", en: "Premium Medical Portfolio" },
     kicker: "MEDICAL LUXURY",
@@ -210,6 +242,8 @@ const projects = [
   {
     id: "horror",
     folder: "platform_horror",
+    cover: "covers/horror.svg",
+    docs: ["live/platform_horror/README.md"],
     title: { ar: "معرض الرعب — Dark Gallery", en: "Horror Gallery — Dark" },
     subtitle: { ar: "معرض فني رعب غامر", en: "Immersive Horror Art" },
     kicker: "HORROR IMMERSIVE",
@@ -223,6 +257,8 @@ const projects = [
   {
     id: "mywebsite",
     folder: "mywebsite",
+    cover: "covers/mywebsite.jpg",
+    docs: ["live/mywebsite/index.html"],
     title: { ar: "معرض أعمالي — الإصدار السابق", en: "MyWebsite — Previous Portfolio" },
     subtitle: { ar: "بورتفوليو ثنائي اللغة", en: "Bilingual Portfolio" },
     kicker: "PERSONAL PORTFOLIO",
@@ -234,6 +270,24 @@ const projects = [
     stack: ["HTML5","CSS3","Vanilla JS"]
   }
 ];
+
+
+
+ // تحميل projects.json الصغير للتحكم في الأغلفة والوثائق بدون تعديل JS
+ fetch('projects.json').then(r=>r.json()).then(data=>{
+   if(data && data.projects){
+     data.projects.forEach(override=>{
+       const p = projects.find(x=> x.id===override.id);
+       if(p){
+         if(override.cover) p.cover = override.cover;
+         if(override.docs) p.docs = override.docs;
+         if(override.title) p.title = override.title;
+         if(override.folder) p.folder = override.folder;
+       }
+     });
+     renderGallery();
+   }
+ }).catch(()=>{});
 
 let currentLang = localStorage.getItem("elite-lang") || "ar";
 let currentFilter = "all";
@@ -258,6 +312,8 @@ const modalDesc = document.getElementById("modalDesc");
 const modalStack = document.getElementById("modalStack");
 const modalStyle = document.getElementById("modalStyle");
 const modalFolder = document.getElementById("modalFolder");
+const modalCover = document.getElementById("modalCover");
+const modalDocs = document.getElementById("modalDocs");
 const toast = document.getElementById("toast");
 const liveFrame = document.getElementById("liveFrame");
 const liveFrameWrap = document.getElementById("liveFrameWrap");
@@ -415,8 +471,10 @@ function renderGallery(){
     card.style.setProperty("--d", (idx*40)+"ms");
     card.dataset.id = p.id;
     const darkClass = p.darkText ? " dark-text" : "";
+    const coverImg = p.cover ? `<img class="card-cover" src="${p.cover}" alt="" loading="lazy" onerror="this.style.display='none'">` : ``;
     card.innerHTML = `
       <div class="card-media${darkClass}" style="--c1:${p.colors[0]};--c2:${p.colors[1]}">
+        ${coverImg}
         <span class="card-badge">${p.stack[0]}</span>
         <span class="card-kicker">${p.kicker}</span>
         <h3>${t(p.title).split("—")[0].trim()}</h3>
@@ -457,6 +515,20 @@ function openModal(p){
   modalStack.innerHTML = p.stack.map(s=>`<span class="pill">${s}</span>`).join("");
   modalStyle.textContent = t(p.style);
   modalFolder.textContent = p.folder;
+  // الغلاف الخارجي
+  if (modalCover) {
+    if (p.cover) { modalCover.src = p.cover; modalCover.style.display = "block"; modalCover.alt = t(p.title); }
+    else { modalCover.style.display = "none"; modalCover.removeAttribute("src"); }
+  }
+  // الوثائق والصور مربوطة
+  if (modalDocs) {
+    const docs = p.docs || [];
+    if (docs.length) {
+      modalDocs.innerHTML = docs.map(d=> `<a href="${d}" target="_blank" rel="noopener" class="pill" style="text-decoration:none">📄 ${d.split('/').pop()}</a>`).join("");
+    } else {
+      modalDocs.innerHTML = `<span class="pill">لا وثائق</span>`;
+    }
+  }
   liveUrlEl.textContent = liveUrl.replace(location.origin, "") || liveUrl;
   modal.dataset.folder = p.folder;
 
@@ -743,3 +815,4 @@ onScroll();
 observeReveals();
 animateCounts();
 renderGallery();
+

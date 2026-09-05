@@ -1,6 +1,0 @@
-{
-  "name": "Audio Engine Pro",
-  "description": "Skeuomorphic professional audio mixing console interface with tactile sliders, rotary knobs, vintage VU meters, and real-time audio DSP.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

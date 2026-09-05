@@ -5,145 +5,323 @@
       "id": "aetheria",
       "folder": "aetheria---glassmorphism-2.0-platform",
       "cover": "covers/aetheria.svg",
-      "gallery": ["covers/aetheria.svg"],
-      "docs": ["live/aetheria---glassmorphism-2.0-platform/README.md", "live/aetheria---glassmorphism-2.0-platform/DOCUMENTATION.md"],
-      "title": { "ar": "Aetheria — Glassmorphism 2.0", "en": "Aetheria — Glassmorphism 2.0" }
+      "gallery": [
+        "covers/aetheria.svg"
+      ],
+      "docs": [
+        "docs/aetheria---glassmorphism-2.0-platform/CONTRIBUTORS.md",
+        "docs/aetheria---glassmorphism-2.0-platform/DOCUMENTATION.md",
+        "docs/aetheria---glassmorphism-2.0-platform/README.md"
+      ],
+      "title": {
+        "ar": "Aetheria — Glassmorphism 2.0",
+        "en": "Aetheria — Glassmorphism 2.0"
+      }
     },
     {
       "id": "analog",
       "folder": "analog-antiques",
       "cover": "covers/analog.jpg",
-      "gallery": ["covers/analog.jpg"],
-      "docs": ["live/analog-antiques/README.md"],
-      "title": { "ar": "Analog Antiques", "en": "Analog Antiques" }
+      "gallery": [
+        "images/analog-antiques/cassette_tapes_stack_1785274984864.jpg",
+        "images/analog-antiques/classic_turntable_1785274960152.jpg",
+        "images/analog-antiques/hero_cassette_recorder_1785274936860.jpg"
+      ],
+      "docs": [
+        "docs/analog-antiques/CONTRIBUTING.md",
+        "docs/analog-antiques/README.md",
+        "docs/analog-antiques/TROUBLESHOOTING.md"
+      ],
+      "title": {
+        "ar": "Analog Antiques",
+        "en": "Analog Antiques"
+      }
     },
     {
       "id": "arabicChat",
       "folder": "arabic-chat-ui-ux-design-website",
       "cover": "covers/arabic-chat.jpg",
-      "gallery": ["covers/arabic-chat.jpg"],
-      "docs": ["live/arabic-chat-ui-ux-design-website/README.md", "live/arabic-chat-ui-ux-design-website/TECHNICAL_ARCHITECTURE.md"],
-      "title": { "ar": "شات العرب", "en": "Arab Chat Platform" }
+      "gallery": [
+        "images/arabic-chat-ui-ux-design-website/5145d5e4-714f-47cf-bf27-0dc634b4895c.jpg",
+        "images/arabic-chat-ui-ux-design-website/Screenshot-2026-03-15-010931.png",
+        "images/arabic-chat-ui-ux-design-website/Screenshot-2026-03-15-011031.png"
+      ],
+      "docs": [
+        "docs/arabic-chat-ui-ux-design-website/CUSTOMIZATION_GUIDE.md",
+        "docs/arabic-chat-ui-ux-design-website/INSTALLATION_GUIDE.md",
+        "docs/arabic-chat-ui-ux-design-website/README.md",
+        "docs/arabic-chat-ui-ux-design-website/TECHNICAL_ARCHITECTURE.md",
+        "docs/arabic-chat-ui-ux-design-website/TROUBLESHOOTING.md"
+      ],
+      "title": {
+        "ar": "شات العرب",
+        "en": "Arab Chat Platform"
+      }
     },
     {
       "id": "audio",
       "folder": "audio-engine-pro",
       "cover": "covers/audio.jpg",
-      "gallery": ["covers/audio.jpg"],
-      "docs": ["live/audio-engine-pro/README.md"],
-      "title": { "ar": "Audio Engine Pro", "en": "Audio Engine Pro" }
+      "gallery": [
+        "images/audio-engine-pro/mahogany_wood_texture_1785195462366.jpg",
+        "images/audio-engine-pro/studio_background_1785195448853.jpg"
+      ],
+      "docs": [
+        "docs/audio-engine-pro/README.md"
+      ],
+      "title": {
+        "ar": "Audio Engine Pro",
+        "en": "Audio Engine Pro"
+      }
     },
     {
       "id": "bauhaus",
       "folder": "bauhaus-1919---creative-design-studio-1-",
       "cover": "covers/bauhaus.jpg",
-      "gallery": ["covers/bauhaus.jpg"],
-      "docs": ["live/bauhaus-1919---creative-design-studio-1-/README.md"],
-      "title": { "ar": "BAUHAUS 1919", "en": "BAUHAUS 1919" }
+      "gallery": [
+        "images/bauhaus-1919---creative-design-studio-1-/bauhaus_architect_portrait_1785197705462.jpg",
+        "images/bauhaus-1919---creative-design-studio-1-/bauhaus_interior_1785197728511.jpg",
+        "images/bauhaus-1919---creative-design-studio-1-/bauhaus_structure_1785197717338.jpg"
+      ],
+      "docs": [
+        "docs/bauhaus-1919---creative-design-studio-1-/CONTRIBUTING.md",
+        "docs/bauhaus-1919---creative-design-studio-1-/README.md",
+        "docs/bauhaus-1919---creative-design-studio-1-/TROUBLESHOOTING.md"
+      ],
+      "title": {
+        "ar": "BAUHAUS 1919",
+        "en": "BAUHAUS 1919"
+      }
     },
     {
       "id": "clinics",
       "folder": "clinics-portfolio-design",
       "cover": "covers/clinics.jpg",
-      "gallery": ["covers/clinics.jpg"],
-      "docs": ["live/clinics-portfolio-design/readme.md"],
-      "title": { "ar": "عيادات النخبة الطبية", "en": "Elite Medical Clinics" }
+      "gallery": [
+        "images/clinics-portfolio-design/about-1.jpg",
+        "images/clinics-portfolio-design/about-2.jpg",
+        "images/clinics-portfolio-design/about-3.jpg"
+      ],
+      "docs": [
+        "docs/clinics-portfolio-design/readme.md"
+      ],
+      "title": {
+        "ar": "عيادات النخبة الطبية",
+        "en": "Elite Medical Clinics"
+      }
     },
     {
       "id": "oman",
       "folder": "dashboard-website",
       "cover": "covers/oman.svg",
-      "gallery": ["covers/oman.svg"],
-      "docs": ["live/dashboard-website/README.md"],
-      "title": { "ar": "Oman Luxury Dash", "en": "Oman Luxury Dash" }
+      "gallery": [
+        "covers/oman.svg"
+      ],
+      "docs": [
+        "docs/dashboard-website/Documentation.md",
+        "docs/dashboard-website/README.md"
+      ],
+      "title": {
+        "ar": "Oman Luxury Dash",
+        "en": "Oman Luxury Dash"
+      }
     },
     {
       "id": "atrium",
       "folder": "design-dashboard-pro",
       "cover": "covers/atrium.jpg",
-      "gallery": ["covers/atrium.jpg"],
-      "docs": ["live/design-dashboard-pro/README.md"],
-      "title": { "ar": "Atrium — ذكاء السوق الصناعي", "en": "Atrium — Industrial OS" }
+      "gallery": [
+        "images/design-dashboard-pro/5005bfa2-9b17-4465-8e87-d33cc8a4b66a.jpg",
+        "images/design-dashboard-pro/Screenshot 2026-05-19 104656.png",
+        "images/design-dashboard-pro/Screenshot 2026-05-19 105337.png"
+      ],
+      "docs": [
+        "docs/design-dashboard-pro/DOCUMENTATION_AR.md",
+        "docs/design-dashboard-pro/README.md",
+        "docs/design-dashboard-pro/TECHNICAL_ARCHITECTURE.md"
+      ],
+      "title": {
+        "ar": "Atrium — ذكاء السوق الصناعي",
+        "en": "Atrium — Industrial OS"
+      }
     },
     {
       "id": "connective",
       "folder": "flat-design-website",
       "cover": "covers/flat.svg",
-      "gallery": ["covers/flat.svg"],
-      "docs": ["live/flat-design-website/README.md"],
-      "title": { "ar": "Connective Agency", "en": "Connective Agency" }
+      "gallery": [
+        "covers/flat.svg"
+      ],
+      "docs": [
+        "docs/flat-design-website/BUILD_AND_DEPLOYMENT.md",
+        "docs/flat-design-website/CONTRIBUTING.md",
+        "docs/flat-design-website/INSTALLATION.md",
+        "docs/flat-design-website/README.md",
+        "docs/flat-design-website/TECH_STACK.md",
+        "docs/flat-design-website/TROUBLESHOOTING.md"
+      ],
+      "title": {
+        "ar": "Connective Agency",
+        "en": "Connective Agency"
+      }
     },
     {
       "id": "grid",
       "folder": "grid-studio---swiss-design-system",
       "cover": "covers/grid.jpg",
-      "gallery": ["covers/grid.jpg"],
-      "docs": ["live/grid-studio---swiss-design-system/README.md"],
-      "title": { "ar": "GRID STUDIO — Swiss System", "en": "GRID STUDIO — Swiss System" }
+      "gallery": [
+        "images/grid-studio---swiss-design-system/swiss_studio_desk_1785196585459.jpg"
+      ],
+      "docs": [
+        "docs/grid-studio---swiss-design-system/ARCHITECTURE.md",
+        "docs/grid-studio---swiss-design-system/CONTRIBUTING.md",
+        "docs/grid-studio---swiss-design-system/README.md",
+        "docs/grid-studio---swiss-design-system/TROUBLESHOOTING.md"
+      ],
+      "title": {
+        "ar": "GRID STUDIO — Swiss System",
+        "en": "GRID STUDIO — Swiss System"
+      }
     },
     {
       "id": "industrial",
       "folder": "industrial-marketplace-platform",
       "cover": "covers/industrial.jpg",
-      "gallery": ["covers/industrial.jpg"],
-      "docs": ["live/industrial-marketplace-platform/README.md"],
-      "title": { "ar": "أجماس — منصة الاستثمار الصناعي", "en": "Ajmas — Industrial Investment" }
+      "gallery": [
+        "images/industrial-marketplace-platform/aeronautics.jpg",
+        "images/industrial-marketplace-platform/agadir.jpg",
+        "images/industrial-marketplace-platform/automotive.jpg"
+      ],
+      "docs": [
+        "docs/industrial-marketplace-platform/ARABIC_DOCUMENTATION.md",
+        "docs/industrial-marketplace-platform/README.md",
+        "docs/industrial-marketplace-platform/TECHNICAL_ARCHITECTURE.md"
+      ],
+      "title": {
+        "ar": "أجماس — منصة الاستثمار الصناعي",
+        "en": "Ajmas — Industrial Investment"
+      }
     },
     {
       "id": "maison",
       "folder": "luxury-creative-agency",
       "cover": "covers/luxury.jpg",
-      "gallery": ["covers/luxury.jpg"],
-      "docs": ["live/luxury-creative-agency/README.md"],
-      "title": { "ar": "MAISON NOIR", "en": "MAISON NOIR" }
+      "gallery": [
+        "images/luxury-creative-agency/agency_portrait_1785186960692.jpg",
+        "images/luxury-creative-agency/editorial_arch_1785186974708.jpg"
+      ],
+      "docs": [
+        "docs/luxury-creative-agency/README.md"
+      ],
+      "title": {
+        "ar": "MAISON NOIR",
+        "en": "MAISON NOIR"
+      }
     },
     {
       "id": "mywebsite",
       "folder": "mywebsite",
       "cover": "covers/mywebsite.jpg",
-      "gallery": ["covers/mywebsite.jpg"],
-      "docs": ["live/mywebsite/index.html"],
-      "title": { "ar": "معرض أعمالي — الإصدار السابق", "en": "MyWebsite — Previous Portfolio" }
+      "gallery": [
+        "images/mywebsite/0b357575-7e99-4fe8-88aa-3accc01597b5.jpg",
+        "images/mywebsite/0c32a377-a5d4-41a8-b3f7-5c5a24dce177.jpg",
+        "images/mywebsite/1.png"
+      ],
+      "docs": [
+        "live/mywebsite/index.html"
+      ],
+      "title": {
+        "ar": "معرض أعمالي — الإصدار السابق",
+        "en": "MyWebsite — Previous Portfolio"
+      }
     },
     {
       "id": "horror",
       "folder": "platform_horror",
       "cover": "covers/horror.svg",
-      "gallery": ["covers/horror.svg"],
-      "docs": ["live/platform_horror/README.md"],
-      "title": { "ar": "معرض الرعب — Dark Gallery", "en": "Horror Gallery — Dark" }
+      "gallery": [
+        "covers/horror.svg"
+      ],
+      "docs": [
+        "docs/platform_horror/README.md"
+      ],
+      "title": {
+        "ar": "معرض الرعب — Dark Gallery",
+        "en": "Horror Gallery — Dark"
+      }
     },
     {
       "id": "raw",
       "folder": "raw-brutalist-creative-studio",
       "cover": "covers/raw.jpg",
-      "gallery": ["covers/raw.jpg"],
-      "docs": ["live/raw-brutalist-creative-studio/README.md"],
-      "title": { "ar": "RAW Brutalist Studio", "en": "RAW Brutalist Studio" }
+      "gallery": [
+        "images/raw-brutalist-creative-studio/brutalist_hero_art_1785187841139.jpg",
+        "images/raw-brutalist-creative-studio/brutalist_project_1_1785187853079.jpg",
+        "images/raw-brutalist-creative-studio/brutalist_project_2_1785187866169.jpg"
+      ],
+      "docs": [
+        "docs/raw-brutalist-creative-studio/CONTRIBUTING.md",
+        "docs/raw-brutalist-creative-studio/README.md"
+      ],
+      "title": {
+        "ar": "RAW Brutalist Studio",
+        "en": "RAW Brutalist Studio"
+      }
     },
     {
       "id": "retrowave",
       "folder": "retrowave-studio",
       "cover": "covers/retrowave.svg",
-      "gallery": ["covers/retrowave.svg"],
-      "docs": ["live/retrowave-studio/README.md"],
-      "title": { "ar": "RetroWave Studio", "en": "RetroWave Studio" }
+      "gallery": [
+        "images/retrowave-studio/brand_identity_thumb_1785274120582.jpg",
+        "images/retrowave-studio/digital_art_thumb_1785274143926.jpg",
+        "images/retrowave-studio/web_design_thumb_1785274131925.jpg"
+      ],
+      "docs": [
+        "docs/retrowave-studio/README.md"
+      ],
+      "title": {
+        "ar": "RetroWave Studio",
+        "en": "RetroWave Studio"
+      }
     },
     {
       "id": "chroma",
       "folder": "studio-chroma",
       "cover": "covers/chroma.jpg",
-      "gallery": ["covers/chroma.jpg"],
-      "docs": ["live/studio-chroma/README.md"],
-      "title": { "ar": "Studio Chroma", "en": "Studio Chroma" }
+      "gallery": [
+        "images/studio-chroma/aura_app_thumbnail_1785193036192.jpg",
+        "images/studio-chroma/lumina_spatial_thumbnail_1785193060089.jpg",
+        "images/studio-chroma/nova_ecommerce_thumbnail_1785193071363.jpg"
+      ],
+      "docs": [
+        "docs/studio-chroma/ARCHITECTURE.md",
+        "docs/studio-chroma/CONTRIBUTING.md",
+        "docs/studio-chroma/INSTALLATION.md",
+        "docs/studio-chroma/README.md",
+        "docs/studio-chroma/TROUBLESHOOTING.md"
+      ],
+      "title": {
+        "ar": "Studio Chroma",
+        "en": "Studio Chroma"
+      }
     },
     {
       "id": "zenith",
       "folder": "zenith-finance",
       "cover": "covers/zenith.jpg",
-      "gallery": ["covers/zenith.jpg"],
-      "docs": ["live/zenith-finance/README.md"],
-      "title": { "ar": "Zenith Finance", "en": "Zenith Finance" }
+      "gallery": [
+        "images/zenith-finance/macbook_oak_desk_1785192125819.jpg"
+      ],
+      "docs": [
+        "docs/zenith-finance/CONTRIBUTING.md",
+        "docs/zenith-finance/DOCUMENTATION.md",
+        "docs/zenith-finance/README.md"
+      ],
+      "title": {
+        "ar": "Zenith Finance",
+        "en": "Zenith Finance"
+      }
     }
   ]
 }

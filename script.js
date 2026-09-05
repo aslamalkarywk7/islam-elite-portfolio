@@ -520,13 +520,29 @@ function openModal(p){
     if (p.cover) { modalCover.src = p.cover; modalCover.style.display = "block"; modalCover.alt = t(p.title); }
     else { modalCover.style.display = "none"; modalCover.removeAttribute("src"); }
   }
-  // الوثائق والصور مربوطة
+  // الوثائق والصور مربوطة — من مجلد docs/ و images/
   if (modalDocs) {
     const docs = p.docs || [];
+    const gallery = p.gallery || [];
+    let html = "";
     if (docs.length) {
-      modalDocs.innerHTML = docs.map(d=> `<a href="${d}" target="_blank" rel="noopener" class="pill" style="text-decoration:none">📄 ${d.split('/').pop()}</a>`).join("");
+      html += docs.map(d=> `<a href="${d}" target="_blank" rel="noopener" class="pill" style="text-decoration:none">📄 ${d.split('/').pop()}</a>`).join("");
+    }
+    if (gallery.length) {
+      html += gallery.slice(0,3).map(g=> `<a href="${g}" target="_blank" rel="noopener" class="pill" style="text-decoration:none">🖼️ ${g.split('/').pop()}</a>`).join("");
+    }
+    modalDocs.innerHTML = html || `<span class="pill">لا وثائق</span>`;
+  }
+  // حدث gallery preview إن وجد
+  const galleryPreview = document.getElementById("modalGallery");
+  if (galleryPreview) {
+    const gallery = p.gallery || [];
+    if (gallery.length > 1) {
+      galleryPreview.innerHTML = gallery.slice(0,4).map(g=> `<img src="${g}" alt="" loading="lazy" style="width:100%;height:100px;object-fit:cover;border-radius:10px;border:1px solid var(--line)" onerror="this.style.display='none'">`).join("");
+      galleryPreview.style.display = "grid";
     } else {
-      modalDocs.innerHTML = `<span class="pill">لا وثائق</span>`;
+      galleryPreview.style.display = "none";
+      galleryPreview.innerHTML = "";
     }
   }
   liveUrlEl.textContent = liveUrl.replace(location.origin, "") || liveUrl;

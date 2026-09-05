@@ -10,26 +10,26 @@ This main folder links all original `README.md` files:
 
 | # | Project | Folder | README | Cover |
 |---|---------|--------|--------|-------|
-| 1 | Aetheria — Glassmorphism 2.0 | `aetheria---glassmorphism-2.0-platform` | [README](live/aetheria---glassmorphism-2.0-platform/README.md) | `covers/aetheria.svg` |
-| 2 | Analog Antiques | `analog-antiques` | [README](live/analog-antiques/README.md) | `covers/analog.jpg` |
-| 3 | Arab Chat Platform | `arabic-chat-ui-ux-design-website` | [README](live/arabic-chat-ui-ux-design-website/README.md) | `covers/arabic-chat.jpg` |
-| 4 | Audio Engine Pro | `audio-engine-pro` | [README](live/audio-engine-pro/README.md) | `covers/audio.jpg` |
-| 5 | BAUHAUS 1919 | `bauhaus-1919---creative-design-studio-1-` | [README](live/bauhaus-1919---creative-design-studio-1-/README.md) | `covers/bauhaus.jpg` |
-| 6 | Elite Medical Clinics | `clinics-portfolio-design` | [readme](live/clinics-portfolio-design/readme.md) | `covers/clinics.jpg` |
-| 7 | Oman Luxury Dash | `dashboard-website` | [README](live/dashboard-website/README.md) | `covers/oman.svg` |
-| 8 | Atrium — Industrial OS | `design-dashboard-pro` | [README](live/design-dashboard-pro/README.md) | `covers/atrium.jpg` |
-| 9 | Connective Agency | `flat-design-website` | [README](live/flat-design-website/README.md) | `covers/flat.svg` |
-| 10 | GRID STUDIO | `grid-studio---swiss-design-system` | [README](live/grid-studio---swiss-design-system/README.md) | `covers/grid.jpg` |
-| 11 | Ajmas — Industrial | `industrial-marketplace-platform` | [README](live/industrial-marketplace-platform/README.md) | `covers/industrial.jpg` |
-| 12 | MAISON NOIR | `luxury-creative-agency` | [README](live/luxury-creative-agency/README.md) | `covers/luxury.jpg` |
-| 13 | Previous Portfolio | `mywebsite` | [index](live/mywebsite/index.html) | `covers/mywebsite.jpg` |
-| 14 | Horror Gallery | `platform_horror` | [README](live/platform_horror/README.md) | `covers/horror.svg` |
-| 15 | RAW Brutalist | `raw-brutalist-creative-studio` | [README](live/raw-brutalist-creative-studio/README.md) | `covers/raw.jpg` |
-| 16 | RetroWave Studio | `retrowave-studio` | [README](live/retrowave-studio/README.md) | `covers/retrowave.svg` |
-| 17 | Studio Chroma | `studio-chroma` | [README](live/studio-chroma/README.md) | `covers/chroma.jpg` |
-| 18 | Zenith Finance | `zenith-finance` | [README](live/zenith-finance/README.md) | `covers/zenith.jpg` |
+| 1 | Aetheria — Glassmorphism 2.0 | `aetheria---glassmorphism-2.0-platform` | [README](docs/aetheria---glassmorphism-2.0-platform/README.md) | `covers/aetheria.svg` |
+| 2 | Analog Antiques | `analog-antiques` | [README](docs/analog-antiques/README.md) | `covers/analog.jpg` |
+| 3 | Arab Chat Platform | `arabic-chat-ui-ux-design-website` | [README](docs/arabic-chat-ui-ux-design-website/README.md) | `covers/arabic-chat.jpg` |
+| 4 | Audio Engine Pro | `audio-engine-pro` | [README](docs/audio-engine-pro/README.md) | `covers/audio.jpg` |
+| 5 | BAUHAUS 1919 | `bauhaus-1919---creative-design-studio-1-` | [README](docs/bauhaus-1919---creative-design-studio-1-/README.md) | `covers/bauhaus.jpg` |
+| 6 | Elite Medical Clinics | `clinics-portfolio-design` | [readme](docs/clinics-portfolio-design/readme.md) | `covers/clinics.jpg` |
+| 7 | Oman Luxury Dash | `dashboard-website` | [README](docs/dashboard-website/README.md) | `covers/oman.svg` |
+| 8 | Atrium — Industrial OS | `design-dashboard-pro` | [README](docs/design-dashboard-pro/README.md) | `covers/atrium.jpg` |
+| 9 | Connective Agency | `flat-design-website` | [README](docs/flat-design-website/README.md) | `covers/flat.svg` |
+| 10 | GRID STUDIO | `grid-studio---swiss-design-system` | [README](docs/grid-studio---swiss-design-system/README.md) | `covers/grid.jpg` |
+| 11 | Ajmas — Industrial | `industrial-marketplace-platform` | [README](docs/industrial-marketplace-platform/README.md) | `covers/industrial.jpg` |
+| 12 | MAISON NOIR | `luxury-creative-agency` | [README](docs/luxury-creative-agency/README.md) | `covers/luxury.jpg` |
+| 13 | Previous Portfolio | `mywebsite` | [index](docs/mywebsite/index.html) | `covers/mywebsite.jpg` |
+| 14 | Horror Gallery | `platform_horror` | [README](docs/platform_horror/README.md) | `covers/horror.svg` |
+| 15 | RAW Brutalist | `raw-brutalist-creative-studio` | [README](docs/raw-brutalist-creative-studio/README.md) | `covers/raw.jpg` |
+| 16 | RetroWave Studio | `retrowave-studio` | [README](docs/retrowave-studio/README.md) | `covers/retrowave.svg` |
+| 17 | Studio Chroma | `studio-chroma` | [README](docs/studio-chroma/README.md) | `covers/chroma.jpg` |
+| 18 | Zenith Finance | `zenith-finance` | [README](docs/zenith-finance/README.md) | `covers/zenith.jpg` |
 
-> Every `live/<folder>/README.md` is linked from the original `../<folder>/README.md` via `projects.json → docs`
+> Every `docs/<folder>/README.md` is linked from the original `../<folder>/README.md` via `projects.json → docs`
 
 ## 🖼️ Outer Covers — Linked
 
@@ -46,7 +46,7 @@ Edit `projects.json` only:
 {
   "id": "aetheria",
   "cover": "covers/aetheria.svg",
-  "docs": ["live/aetheria---glassmorphism-2.0-platform/README.md"]
+  "docs": ["docs/aetheria---glassmorphism-2.0-platform/README.md"]
 }
 ```
 
@@ -71,9 +71,10 @@ islam-portfolio-elite/
 ├── index.html          ← Main gallery
 ├── projects.json       ← Small control file (covers + docs)
 ├── covers/             ← 18 outer covers
-├── live/               ← 18 built projects (real code)
+├── docs/               ← 18 built projects (real code)
 │   └── <folder>/README.md  ← linked to main
 ├── assets/             ← Personal images
 ├── script.js / style.css
 └── server.js / vercel.json
 ```
+

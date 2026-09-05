@@ -1,0 +1,14 @@
+{
+  "name": "islam-elite-portfolio",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Elite Portfolio — 18 projects live preview integrated",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "serve": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

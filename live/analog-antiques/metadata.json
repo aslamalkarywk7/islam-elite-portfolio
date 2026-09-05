@@ -1,0 +1,6 @@
+{
+  "name": "Analog Antiques",
+  "description": "A retro and vintage cassette tape archive, interactive tape player, and analog audio shop.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

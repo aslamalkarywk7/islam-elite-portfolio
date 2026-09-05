@@ -1,0 +1,199 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Montserrat:wght@800;900&family=Space+Mono:ital,wght@0,400;0,700;1,700&family=Syne:wght@700;800;900&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Space Mono', 'JetBrains Mono', monospace, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Syne', 'Montserrat', 'Impact', sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+  }
+}
+
+/* Custom Neo-Brutalist & Bold Typography Theme Utilities */
+.brutal-border {
+  border: 5px solid #000000;
+}
+
+.brutal-border-white {
+  border: 5px solid #ffffff;
+}
+
+.hard-shadow {
+  box-shadow: 10px 10px 0px 0px #000000;
+}
+
+.hard-shadow-sm {
+  box-shadow: 5px 5px 0px 0px #000000;
+}
+
+.hard-shadow-white {
+  box-shadow: 10px 10px 0px 0px #ffffff;
+}
+
+.electric-lime {
+  background-color: #CCFF00;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.outline-text {
+  -webkit-text-stroke: 2px #000000;
+  color: transparent;
+}
+
+.outline-text-white {
+  -webkit-text-stroke: 2px #ffffff;
+  color: transparent;
+}
+
+.outline-text-lime {
+  -webkit-text-stroke: 2px #CCFF00;
+  color: transparent;
+}
+
+.border-hard-5 {
+  border: 5px solid #000000;
+}
+
+.border-hard-white-5 {
+  border: 5px solid #ffffff;
+}
+
+.border-hard-lime-5 {
+  border: 5px solid #CCFF00;
+}
+
+/* Hard Shadows - Zero Blur */
+.shadow-hard-black-sm {
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.shadow-hard-black {
+  box-shadow: 8px 8px 0px #000000;
+}
+
+.shadow-hard-black-lg {
+  box-shadow: 12px 12px 0px #000000;
+}
+
+.shadow-hard-lime {
+  box-shadow: 8px 8px 0px #CCFF00;
+}
+
+.shadow-hard-lime-lg {
+  box-shadow: 12px 12px 0px #CCFF00;
+}
+
+.shadow-hard-white {
+  box-shadow: 8px 8px 0px #ffffff;
+}
+
+/* Interactive Brutalist Button Push State */
+.btn-brutal {
+  border: 5px solid #000000;
+  box-shadow: 8px 8px 0px #000000;
+  transition: all 0.08s ease-in-out;
+}
+
+.btn-brutal:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 11px 11px 0px #000000;
+}
+
+.btn-brutal:active {
+  transform: translate(4px, 4px);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+/* Lime Variant Button */
+.btn-brutal-lime {
+  background-color: #CCFF00;
+  color: #000000;
+  border: 5px solid #000000;
+  box-shadow: 8px 8px 0px #000000;
+  font-weight: 900;
+  transition: all 0.08s ease-in-out;
+}
+
+.btn-brutal-lime:hover {
+  background-color: #ffffff;
+  color: #000000;
+  transform: translate(-3px, -3px);
+  box-shadow: 12px 12px 0px #CCFF00;
+}
+
+.btn-brutal-lime:active {
+  transform: translate(4px, 4px);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+/* Continuous Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 16s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* CRT and Scanlines for Studio Screen Mockup */
+.scanlines {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0, 0, 0, 0.35) 50%,
+    rgba(0, 0, 0, 0.35)
+  );
+  background-size: 100% 4px;
+}
+
+.crt-screen {
+  position: relative;
+  overflow: hidden;
+}
+
+.crt-screen::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 40;
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-left: 4px solid #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #CCFF00;
+  border: 3px solid #000000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+

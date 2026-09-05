@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/live/(.*)",
+      "headers": [{ "key": "X-Frame-Options", "value": "ALLOWALL" }]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [{ "key": "X-Frame-Options", "value": "ALLOWALL" }]
+    }
+  ],
+  "rewrites": [
+    { "source": "/live/:path*", "destination": "/live/:path*" }
+  ]
+}

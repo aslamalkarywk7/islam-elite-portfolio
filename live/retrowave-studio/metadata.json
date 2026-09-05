@@ -1,0 +1,6 @@
+{
+  "name": "RetroWave Studio",
+  "description": "Vibrant Memphis Design creative studio landing page with interactive geometric elements and workplace mockup presentation modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

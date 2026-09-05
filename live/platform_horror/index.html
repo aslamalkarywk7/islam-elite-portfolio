@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="معرض الرعب — لوحات فنية مرعبة من عوالم الظلام: جماجم، أشباح، عيون دامية، وخفافيش ليلية. ادخل إن كنت شجاعاً.">
+  <title>معرض الرعب — Dark Gallery</title>
+  <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%80%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- شاشة الدخول المرعبة -->
+  <div class="intro-screen" id="introScreen">
+    <div class="intro-fog" aria-hidden="true"></div>
+    <div class="intro-content">
+      <div class="intro-eye" aria-hidden="true">
+        <svg viewBox="0 0 200 120" width="220" height="132">
+          <ellipse cx="100" cy="60" rx="95" ry="50" fill="#1a0408" stroke="#7a0d18" stroke-width="2"/>
+          <circle cx="100" cy="60" r="38" fill="#b30010"/>
+          <circle cx="100" cy="60" r="20" fill="#1a0408"/>
+          <circle cx="108" cy="50" r="6" fill="#ff2a3c"/>
+          <path class="intro-eye-vein" d="M30 60 Q60 40 100 60" fill="none" stroke="#5e0a12" stroke-width="1.4"/>
+          <path class="intro-eye-vein" d="M170 60 Q140 80 100 60" fill="none" stroke="#5e0a12" stroke-width="1.4"/>
+        </svg>
+      </div>
+      <p class="intro-warning" data-ar="تحذير: المحتوى التالي قد يزعج ضعاف القلوب" data-en="Warning: The following may disturb the faint of heart">تحذير: المحتوى التالي قد يزعج ضعاف القلوب</p>
+      <h1 class="intro-title" data-ar="معرض الرعب" data-en="DARK GALLERY">معرض الرعب</h1>
+      <p class="intro-sub" data-ar="ابواب تُطرق بلا أيدي، أصوات بلا أفواه، لوحات تنظر إليك" data-en="Doors that knock without hands, voices without mouths, paintings that watch you">ابواب تُطرق بلا أيدي، أصوات بلا أفواه، لوحات تنظر إليك</p>
+      <button class="intro-enter" id="introEnter" type="button" data-ar="ادخل إن كنت شجاعاً" data-en="Enter if you dare">ادخل إن كنت شجاعاً</button>
+      <p class="intro-hint" data-ar="أو اضغط ESC للهرب..." data-en="Or press ESC to flee...">أو اضغط ESC للهرب...</p>
+    </div>
+  </div>
+
+  <!-- مؤثرات الصفحة الثابتة -->
+  <div class="page-fog" aria-hidden="true"></div>
+  <div class="blood-drip blood-drip-one" aria-hidden="true"></div>
+  <div class="blood-drip blood-drip-two" aria-hidden="true"></div>
+  <div class="blood-drip blood-drip-three" aria-hidden="true"></div>
+  <div class="cursor-eye" aria-hidden="true">
+    <div class="cursor-eye-pupil"></div>
+  </div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="التنقل الرئيسي" data-aria-ar="التنقل الرئيسي" data-aria-en="Main Navigation">
+      <a class="brand" href="#top" data-aria-ar="معرض الرعب - الرئيسية" data-aria-en="Dark Gallery - Home" aria-label="معرض الرعب - الرئيسية">
+        <span class="brand-mark">☠</span>
+        <span data-ar="معرض الرعب" data-en="DARK GALLERY">معرض الرعب</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navMenu" data-aria-ar="فتح القائمة" data-aria-en="Open Menu" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navMenu">
+        <li><a class="nav-link active" href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+        <li><a class="nav-link" href="#about" data-ar="عن المعرض" data-en="About">عن المعرض</a></li>
+        <li><a class="nav-link" href="#featured" data-ar="اللوحات المميزة" data-en="Featured">اللوحات المميزة</a></li>
+        <li><a class="nav-link" href="#gallery" data-ar="المعرض" data-en="Gallery">المعرض</a></li>
+        <li><a class="nav-link" href="#facts" data-ar="حقائق مرعبة" data-en="Fearsome Facts">حقائق مرعبة</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="sound-toggle" type="button" data-aria-ar="تشغيل/إيقاف الصوت" data-aria-en="Toggle ambient sound" aria-label="تشغيل/إيقاف الصوت" aria-pressed="false">
+          <span class="sound-icon" aria-hidden="true">♪</span>
+          <span class="sound-text" data-ar="صوت" data-en="Sound">صوت</span>
+        </button>
+        <button class="lang-toggle" type="button" data-aria-ar="تبديل اللغة إلى الإنجليزية" data-aria-en="Switch language to Arabic" aria-label="تبديل اللغة إلى الإنجليزية">
+          <span class="lang-icon" aria-hidden="true">🌐</span>
+          <span class="lang-text">EN</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="main-hidden">
+    <section class="hero shell section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span><span data-ar="مجموعة فنية من عوالم الظلام" data-en="An art collection from the dark realms">مجموعة فنية من عوالم الظلام</span></p>
+        <h1 data-ar="لوحات لا تُنسى... لأنها لا تتركك تنام" data-en="Paintings you can't forget... because they won't let you sleep">لوحات لا تُنسى... لأنها لا تتركك تنام</h1>
+        <p class="hero-lead" data-ar="معرض فني مرعب يجمع أجسام الليل وأرواح الظلام في لوحات حية. كل لوحة لها عين تطاردك، وكل ظل يخفي قصة موت." data-en="A horror art gallery gathering creatures of the night and souls of darkness in living paintings. Each has an eye that hunts you, and every shadow hides a death story.">
+          معرض فني مرعب يجمع أجسام الليل وأرواح الظلام في لوحات حية. كل لوحة لها عين تطاردك، وكل ظل يخفي قصة موت.
+        </p>
+
+        <div class="typing-line" aria-live="polite">
+          <span data-ar="الظلام يخبّئ" data-en="The dark hides">الظلام يخبّئ</span> <span id="typingText">الجماجم</span><i aria-hidden="true"></i>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#gallery" data-ar="اكتشف اللوحات" data-en="Discover Paintings">اكتشف اللوحات</a>
+          <a class="btn btn-ghost" href="#about" data-ar="اقترب بحذر" data-en="Approach with Caution">اقترب بحذر</a>
+        </div>
+
+        <div class="signal-row" data-aria-ar="نقاط تحذير مختصرة" data-aria-en="Brief warnings" aria-label="نقاط تحذير مختصرة">
+          <span data-ar="لوحات حية" data-en="Living Paintings">لوحات حية</span>
+          <span data-ar="أصوات ليلية" data-en="Night Sounds">أصوات ليلية</span>
+          <span data-ar="عيون تراقبك" data-en="Watching Eyes">عيون تراقبك</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" style="--delay: 120ms">
+        <div class="hero-frame">
+          <div class="frame-bar" aria-hidden="true">
+            <i></i><i></i><i></i>
+            <span>dark-gallery / chamber</span>
+          </div>
+
+          <!-- لوحة البطل: الجمجمة الملكية -->
+          <div class="hero-painting">
+            <svg class="painting-svg" viewBox="0 0 300 360" role="img" aria-label="جمجمة ملكية متوّجة">
+              <defs>
+                <radialGradient id="skullGlow" cx="50%" cy="40%" r="60%">
+                  <stop offset="0%" stop-color="#3a0d12"/>
+                  <stop offset="100%" stop-color="#0a0306"/>
+                </radialGradient>
+                <linearGradient id="crownGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#8a6d1f"/>
+                  <stop offset="100%" stop-color="#3d2e0a"/>
+                </linearGradient>
+              </defs>
+              <rect width="300" height="360" fill="url(#skullGlow)"/>
+              <!-- التاج -->
+              <path d="M90 70 L110 35 L130 60 L150 25 L170 60 L190 35 L210 70 L210 95 L90 95 Z" fill="url(#crownGrad)" stroke="#caa53e" stroke-width="1.5"/>
+              <circle cx="110" cy="35" r="5" fill="#b30010"/>
+              <circle cx="150" cy="25" r="6" fill="#b30010"/>
+              <circle cx="190" cy="35" r="5" fill="#b30010"/>
+              <!-- الجمجمة -->
+              <path d="M150 95 C110 95 85 130 85 175 C85 200 95 220 105 235 C100 255 115 270 130 270 L170 270 C185 270 200 255 195 235 C205 220 215 200 215 175 C215 130 190 95 150 95 Z" fill="#e8e2d0" stroke="#7a7060" stroke-width="2"/>
+              <!-- تجويف العين الأيسر -->
+              <ellipse cx="125" cy="180" rx="22" ry="26" fill="#0a0306"/>
+              <circle class="eye-glow eye-left" cx="125" cy="180" r="9" fill="#ff2a3c"/>
+              <!-- تجويف العين الأيمن -->
+              <ellipse cx="175" cy="180" rx="22" ry="26" fill="#0a0306"/>
+              <circle class="eye-glow eye-right" cx="175" cy="180" r="9" fill="#ff2a3c"/>
+              <!-- الأنف -->
+              <path d="M150 205 L140 230 L150 240 L160 230 Z" fill="#0a0306"/>
+              <!-- الأسنان -->
+              <rect x="118" y="245" width="64" height="18" fill="#1a1208"/>
+              <line x1="130" y1="245" x2="130" y2="263" stroke="#3a2a10" stroke-width="2"/>
+              <line x1="142" y1="245" x2="142" y2="263" stroke="#3a2a10" stroke-width="2"/>
+              <line x1="150" y1="245" x2="150" y2="263" stroke="#3a2a10" stroke-width="2"/>
+              <line x1="158" y1="245" x2="158" y2="263" stroke="#3a2a10" stroke-width="2"/>
+              <line x1="170" y1="245" x2="170" y2="263" stroke="#3a2a10" stroke-width="2"/>
+              <!-- شقوق -->
+              <path d="M100 130 L120 145" stroke="#5a5040" stroke-width="1" fill="none"/>
+              <path d="M200 130 L180 145" stroke="#5a5040" stroke-width="1" fill="none"/>
+            </svg>
+            <div class="painting-plaque">
+              <strong data-ar="الجمجمة الملكية" data-en="The Royal Skull">الجمجمة الملكية</strong>
+              <span data-ar="زيت على ظلام · 1666" data-en="Oil on darkness · 1666">زيت على ظلام · 1666</span>
+            </div>
+          </div>
+
+          <div class="mini-panel panel-top">
+            <strong data-ar="12" data-en="12">12</strong>
+            <span data-ar="لوحة مسكونة" data-en="Haunted Paintings">لوحة مسكونة</span>
+          </div>
+          <div class="mini-panel panel-bottom">
+            <strong data-ar="∞" data-en="∞">∞</strong>
+            <span data-ar="أرواح طليقة" data-en="Loose Souls">أرواح طليقة</span>
+          </div>
+        </div>
+
+        <div class="stats-grid" data-aria-ar="إحصائيات الرعب" data-aria-en="Horror stats" aria-label="إحصائيات الرعب">
+          <article class="stat-card">
+            <strong class="counter" data-target="12">0</strong>
+            <span data-ar="لوحة فنية" data-en="Paintings">لوحة فنية</span>
+          </article>
+          <article class="stat-card">
+            <strong class="counter" data-target="666" data-prefix="">0</strong>
+            <span data-ar="سنة لعنة" data-en="Years Cursed">سنة لعنة</span>
+          </article>
+          <article class="stat-card">
+            <strong class="counter" data-target="8" data-prefix="">0</strong>
+            <span data-ar="أنواع رعب" data-en="Horror Types">أنواع رعب</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="aboutTitle">
+      <div class="shell about-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span><span data-ar="عن المعرض" data-en="About">عن المعرض</span></p>
+          <h2 id="aboutTitle" data-ar="ما يختبئ خلف اللوحات" data-en="What Hides Behind the Paintings">ما يختبئ خلف اللوحات</h2>
+          <p data-ar="كل لوحة في هذا المعرض ليست مجرد رسم... بل باب نصف مفتوح نحو عالم لا يُرى نهاراً. الجماجم تضحك بصمت، والأشباح تطوف دون قدمين، والعيون تطارد من يجرؤ على النظر طويلاً." data-en="Every painting in this gallery is not just a drawing... but a half-open door to a world that never sees daylight. Skulls laugh in silence, ghosts float without feet, and eyes hunt whoever dares to look too long.">
+            كل لوحة في هذا المعرض ليست مجرد رسم... بل باب نصف مفتوح نحو عالم لا يُرى نهاراً. الجماجم تضحك بصمت، والأشباح تطوف دون قدمين، والعيون تطارد من يجرؤ على النظر طويلاً.
+          </p>
+        </div>
+
+        <div class="about-cards">
+          <article class="glass-card reveal">
+            <span class="card-icon">☠</span>
+            <h3 data-ar="الجماجم" data-en="Skulls">الجماجم</h3>
+            <p data-ar="عظام تتحرك بلا لحم، تضحك بلا شفاه، وتحرس أسراراً ماتت مع أصحابها." data-en="Bones that move without flesh, laugh without lips, and guard secrets that died with their owners.">عظام تتحرك بلا لحم، تضحك بلا شفاه، وتحرس أسراراً ماتت مع أصحابها.</p>
+          </article>
+          <article class="glass-card reveal" style="--delay: 80ms">
+            <span class="card-icon">👻</span>
+            <h3 data-ar="الأشباح" data-en="Ghosts">الأشباح</h3>
+            <p data-ar="أرواح ضائعة بين عالمين، تطفو في الأروقة وتنادي أسماء من نسيهم الزمن." data-en="Lost souls between two worlds, floating through corridors and calling names time forgot.">أرواح ضائعة بين عالمين، تطفو في الأروقة وتنادي أسماء من نسيهم الزمن.</p>
+          </article>
+          <article class="glass-card reveal" style="--delay: 160ms">
+            <span class="card-icon">👁</span>
+            <h3 data-ar="العيون" data-en="Eyes">العيون</h3>
+            <p data-ar="أعين دامية لا تطرف، تراقبك أينما ذهبت، ولا تغفو حتى تغمض أنت عينيك للأبد." data-en="Bloody eyes that never blink, watching you wherever you go, never sleeping until you close yours forever.">أعين دامية لا تطرف، تراقبك أينما ذهبت، ولا تغفو حتى تغمض أنت عينيك للأبد.</p>
+          </article>
+          <article class="glass-card reveal" style="--delay: 240ms">
+            <span class="card-icon">🦇</span>
+            <h3 data-ar="خفافيش الليل" data-en="Night Bats">خفافيش الليل</h3>
+            <p data-ar="أجنحة جلدية تمزق الهواء، تعشش في الأسقف وتستيقظ حين يخبو آخر ضوء." data-en="Leathery wings that tear the air, nesting in ceilings and waking when the last light fades.">أجنحة جلدية تمزق الهواء، تعشش في الأسقف وتستيقظ حين يخبو آخر ضوء.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="shell fear-strip reveal" aria-labelledby="fearStripTitle">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span><span data-ar="قاعدة الزائر" data-en="Visitor's Rule">قاعدة الزائر</span></p>
+          <h3 id="fearStripTitle" data-ar="ثلاث وصايا قبل التجوال" data-en="Three Commandments Before Roaming">ثلاث وصايا قبل التجوال</h3>
+        </div>
+        <div class="fear-rules">
+          <div class="fear-rule">
+            <strong>I</strong>
+            <span data-ar="لا تنظر للوحة لأكثر من 13 ثانية" data-en="Don't stare at a painting for over 13 seconds">لا تنظر للوحة لأكثر من 13 ثانية</span>
+          </div>
+          <div class="fear-rule">
+            <strong>II</strong>
+            <span data-ar="لا تنطق اسم الموت بصوت عالٍ" data-en="Don't speak the name of death aloud">لا تنطق اسم الموت بصوت عالٍ</span>
+          </div>
+          <div class="fear-rule">
+            <strong>III</strong>
+            <span data-ar="أطفئ الصوت إن سمعت نبضاً ليس نبضك" data-en="Mute the sound if you hear a pulse that isn't yours">أطفئ الصوت إن سمعت نبضاً ليس نبضك</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-section" id="featured" aria-labelledby="featuredTitle">
+      <div class="shell">
+        <div class="section-heading narrow reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span><span data-ar="اللوحات المميزة" data-en="Featured">اللوحات المميزة</span></p>
+          <h2 id="featuredTitle" data-ar="أربع لوحات لا يجرؤ أحد على امتلاكها" data-en="Four Paintings No One Dares to Own">أربع لوحات لا يجرؤ أحد على امتلاكها</h2>
+          <p data-ar="لوحات اختارها الظلام لتبقى هنا، كل واحدة تحمل لعنتها الخاصة وسرّها المدفون." data-en="Paintings chosen by darkness to remain here, each carrying its own curse and buried secret.">لوحات اختارها الظلام لتبقى هنا، كل واحدة تحمل لعنتها الخاصة وسرّها المدفون.</p>
+        </div>
+
+        <div class="featured-grid">
+          <article class="project-card large reveal" data-category="ghosts">
+            <div class="featured-art" data-art="ghost"></div>
+            <div class="project-content">
+              <span class="badge" data-ar="أشباح" data-en="Ghosts">أشباح</span>
+              <h3 data-ar="الشبح الرمادي" data-en="The Grey Phantom">الشبح الرمادي</h3>
+              <p data-ar="يطفو في منتصف الليل، ينادي اسماً لا أحد يعرفه، ويختفي حين يُنادى باسمه." data-en="Floats at midnight, calling a name no one knows, and vanishes when called by its own name.">يطفو في منتصف الليل، ينادي اسماً لا أحد يعرفه، ويختفي حين يُنادى باسمه.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay: 80ms" data-category="eyes">
+            <div class="featured-art" data-art="eye"></div>
+            <div class="project-content">
+              <span class="badge" data-ar="عيون" data-en="Eyes">عيون</span>
+              <h3 data-ar="العين التي لا تنام" data-en="The Sleepless Eye">العين التي لا تنام</h3>
+              <p data-ar="تراقب المعرض كله من زاوية لا يصلها الضوء، وتطارد كل من يحاول إغلاقها." data-en="Watches the whole gallery from a corner light never reaches, and hunts all who try to close it.">تراقب المعرض كله من زاوية لا يصلها الضوء، وتطارد كل من يحاول إغلاقها.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay: 160ms" data-category="bats">
+            <div class="featured-art" data-art="bat"></div>
+            <div class="project-content">
+              <span class="badge" data-ar="خفافيش" data-en="Bats">خفافيش</span>
+              <h3 data-ar="سرب الخفافيش" data-en="The Bat Swarm">سرب الخفافيش</h3>
+              <p data-ar="يحجب القمر حين يمر، ويحمل في أجنحته همسات الموتى الذين لم يُدفنوا." data-en="Blocks the moon when it passes, carrying in its wings whispers of the unburied dead.">يحجب القمر حين يمر، ويحمل في أجنحته همسات الموتى الذين لم يُدفنوا.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay: 240ms" data-category="moon">
+            <div class="featured-art" data-art="moon"></div>
+            <div class="project-content">
+              <span class="badge" data-ar="قمر" data-en="Moon">قمر</span>
+              <h3 data-ar="القمر الدموي" data-en="The Blood Moon">القمر الدموي</h3>
+              <p data-ar="يطلّ مرة كل قرن، يصبغ السماء بالحمرة، ويوقظ كل ما نام تحت التراب." data-en="Rises once a century, dyeing the sky red, and awakening all that slept beneath the soil.">يطلّ مرة كل قرن، يصبغ السماء بالحمرة، ويوقظ كل ما نام تحت التراب.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery" aria-labelledby="galleryTitle">
+      <div class="shell">
+        <div class="section-heading narrow reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span><span data-ar="المعرض الكامل" data-en="Gallery">المعرض الكامل</span></p>
+          <h2 id="galleryTitle" data-ar="كل لوحة لها ظلّها الخاص" data-en="Every Painting Casts Its Own Shadow">كل لوحة لها ظلّها الخاص</h2>
+          <p data-ar="اختر نوع الرعب الذي يقترب منك، واضغط على أي لوحة لتقترب منها أكثر... إن أردت." data-en="Choose the type of horror that approaches you, and click any painting to get closer... if you wish.">اختر نوع الرعب الذي يقترب منك، واضغط على أي لوحة لتقترب منها أكثر... إن أردت.</p>
+        </div>
+
+        <label class="gallery-search reveal">
+          <span data-ar="ابحث بين الأرواح" data-en="Search among souls">ابحث بين الأرواح</span>
+          <input id="gallerySearch" type="search" placeholder="مثال: جمجمة، شبح، عين..." data-placeholder-ar="مثال: جمجمة، شبح، عين..." data-placeholder-en="e.g., skull, ghost, eye..." autocomplete="off">
+        </label>
+
+        <div class="filter-bar reveal" data-aria-ar="فلترة الرعب" data-aria-en="Filter horror" aria-label="فلترة الرعب">
+          <button class="filter-btn active" type="button" data-filter="all" data-ar="الكل" data-en="All">الكل</button>
+          <button class="filter-btn" type="button" data-filter="skulls" data-ar="جماجم" data-en="Skulls">جماجم</button>
+          <button class="filter-btn" type="button" data-filter="ghosts" data-ar="أشباح" data-en="Ghosts">أشباح</button>
+          <button class="filter-btn" type="button" data-filter="eyes" data-ar="عيون" data-en="Eyes">عيون</button>
+          <button class="filter-btn" type="button" data-filter="bats" data-ar="خفافيش" data-en="Bats">خفافيش</button>
+          <button class="filter-btn" type="button" data-filter="monsters" data-ar="وحوش" data-en="Monsters">وحوش</button>
+          <button class="filter-btn" type="button" data-filter="moon" data-ar="قمر" data-en="Moon">قمر</button>
+          <button class="filter-btn" type="button" data-filter="hearts" data-ar="قلوب" data-en="Hearts">قلوب</button>
+        </div>
+
+        <div class="gallery-grid" aria-live="polite" id="galleryGrid">
+          <!-- اللوحات تُولّد عبر JavaScript -->
+        </div>
+
+        <div class="empty-state" id="galleryEmpty" hidden>
+          <strong data-ar="لا أرواح هنا..." data-en="No souls here...">لا أرواح هنا...</strong>
+          <span data-ar="جرّب كلمة أخرى أو اختر “الكل” لتبقى بأمان." data-en="Try another word or choose 'All' to stay safe.">جرّب كلمة أخرى أو اختر “الكل” لتبقى بأمان.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section facts-section" id="facts" aria-labelledby="factsTitle">
+      <div class="shell facts-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span><span data-ar="حقائق مرعبة" data-en="Fearsome Facts">حقائق مرعبة</span></p>
+          <h2 id="factsTitle" data-ar="أرقام لا تُحصى من الظلام" data-en="Uncountable Numbers of Darkness">أرقام لا تُحصى من الظلام</h2>
+          <p data-ar="بعض الحقائق التي جمعها الحرّاس قبل أن يختفوا هم أيضاً... اقرأها على مسؤوليتك." data-en="Some facts gathered by the guardians before they too vanished... read at your own risk.">بعض الحقائق التي جمعها الحرّاس قبل أن يختفوا هم أيضاً... اقرأها على مسؤوليتك.</p>
+        </div>
+
+        <div class="facts-grid reveal">
+          <article class="fact-card">
+            <strong class="counter" data-target="3">0</strong>
+            <span data-ar="ساعات بعد منتصف الليل تكون فيها اللوحات أكثر نشاطاً" data-en="Hours after midnight when paintings are most active">ساعات بعد منتصف الليل تكون فيها اللوحات أكثر نشاطاً</span>
+          </article>
+          <article class="fact-card">
+            <strong class="counter" data-target="13">0</strong>
+            <span data-ar="ثانية هي الحد الآمن للنظر في أي عين مرسومة" data-en="Seconds is the safe limit for staring into any painted eye">ثانية هي الحد الآمن للنظر في أي عين مرسومة</span>
+          </article>
+          <article class="fact-card">
+            <strong class="counter" data-target="666">0</strong>
+            <span data-ar="سنة مرّت على آخر من حاول سرقة لوحة من هنا" data-en="Years since the last one who tried to steal a painting here">سنة مرّت على آخر من حاول سرقة لوحة من هنا</span>
+          </article>
+          <article class="fact-card">
+            <strong class="counter" data-target="0">0</strong>
+            <span data-ar="عدد من خرجوا أحياء بعد منتصف الليل... حتى الآن" data-en="Number who left alive after midnight... so far">عدد من خرجوا أحياء بعد منتصف الليل... حتى الآن</span>
+          </article>
+        </div>
+
+        <div class="ritual reveal" style="--delay: 220ms">
+          <article>
+            <strong>01</strong>
+            <h3 data-ar="الاقتراب" data-en="Approach">الاقتراب</h3>
+            <p data-ar="تخطّ العتبة ببطء، أطفئ الأضواء، ودع عينيك تعتادان الظلام." data-en="Cross the threshold slowly, dim the lights, and let your eyes adapt to the dark.">تخطّ العتبة ببطء، أطفئ الأضواء، ودع عينيك تعتادان الظلام.</p>
+          </article>
+          <article>
+            <strong>02</strong>
+            <h3 data-ar="المشاهدة" data-en="Observation">المشاهدة</h3>
+            <p data-ar="انظر للوحات بترتيب، لا تقفز بينها، فكل عين تنتظر دورها فيك." data-en="Look at the paintings in order, don't jump between them, each eye awaits its turn on you.">انظر للوحات بترتيب، لا تقفز بينها، فكل عين تنتظر دورها فيك.</p>
+          </article>
+          <article>
+            <strong>03</strong>
+            <h3 data-ar="الهروب" data-en="Escape">الهروب</h3>
+            <p data-ar="حين تشعر ببرودة في قفصك الصدري، أغلق الصفحة فوراً ولا تعد." data-en="When you feel a chill in your chest, close the page at once and never return.">حين تشعر ببرودة في قفصك الصدري، أغلق الصفحة فوراً ولا تعد.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <p data-ar="© 1666 — معرض الرعب · جميع الأرواح محفوظة" data-en="© 1666 — Dark Gallery · All Souls Reserved">© 1666 — معرض الرعب · جميع الأرواح محفوظة</p>
+      <a href="#top" data-ar="ارجع للأعلى ↑ إن استطعت" data-en="Back to Top ↑ if you can" data-aria-ar="العودة للأعلى" data-aria-en="Back to top" aria-label="العودة للأعلى">ارجع للأعلى ↑ إن استطعت</a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-aria-ar="العودة إلى أعلى الصفحة" data-aria-en="Back to top of the page" aria-label="العودة إلى أعلى الصفحة">↑</button>
+
+  <!-- Lightbox لعرض اللوحات بحجم أكبر -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+    <button class="lightbox-close" type="button" data-aria-ar="إغلاق العرض" data-aria-en="Close view" aria-label="إغلاق العرض">×</button>
+    <figure class="lightbox-card">
+      <div class="lightbox-art" id="lightboxArt"></div>
+      <figcaption>
+        <span id="lightboxCategory"></span>
+        <strong id="lightboxTitle"></strong>
+        <p id="lightboxDesc"></p>
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- مكتبة GSAP للحركات المتقدمة -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

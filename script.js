@@ -799,7 +799,7 @@ document.getElementById("contactForm")?.addEventListener("submit", (e)=>{
   if(!name || !email || !msg){ showToast(currentLang==="en"?"Please fill all fields":"يرجى ملء جميع الحقول"); return; }
   const subject = encodeURIComponent(currentLang==="en" ? `Hiring Inquiry from ${name}` : `استفسار توظيف من ${name}`);
   const body = encodeURIComponent(`${msg}\n\n— ${name} (${email})`);
-  window.location.href = `mailto:hello@islam-nashar.dev?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:aslamalkarywka+dev@gmail.com?subject=${subject}&body=${body}`;
   showToast(currentLang==="en"?"Opening your email app...":"جاري فتح بريدك...");
 });
 

@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Montserrat', 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    color: #2D3436;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Flat Palette Utility Classes */
+:root {
+  --sky-blue: #0984E3;
+  --sky-blue-hover: #0773C5;
+  --bright-orange: #FF7675;
+  --bright-orange-dark: #E17055;
+  --lime-green: #2ECC71;
+  --lime-green-dark: #10AC84;
+  --charcoal: #2D3436;
+  --flat-gray-bg: #F8F9FA;
+  --flat-gray-border: #E9ECEF;
+}
+
+/* Custom Scrollbar for Flat look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F9FA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0984E3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0773C5;
+}
+
+/* Strict Flat design utility: no drop-shadows */
+.flat-no-shadow {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* Crisp Flat solid border card */
+.flat-card {
+  background-color: #FFFFFF;
+  border: 2px solid #E9ECEF;
+  border-radius: 12px;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.flat-card:hover {
+  border-color: #0984E3;
+}
+

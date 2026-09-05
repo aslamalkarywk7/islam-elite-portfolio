@@ -1,0 +1,361 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ──────────────────────────────────────────────
+   DESIGN TOKENS — Quiet Luxury
+   ────────────────────────────────────────────── */
+:root {
+  --black: #1A1C1E;
+  --gold: #C9A96E;
+  --gold-dim: rgba(201, 169, 110, 0.14);
+  --gold-mid: rgba(201, 169, 110, 0.45);
+  --burg: #800020;
+  --burg-dim: rgba(128, 0, 32, 0.15);
+  --burg-glow: rgba(128, 0, 32, 0.35);
+  --surface: #25282C;
+  --surface2: #2D3136;
+  --border: rgba(201, 169, 110, 0.15);
+  --text-dim: #E2E8F0;
+  --text-mid: #F8FAFC;
+}
+
+/* ──────────────────────────────────────────────
+   BASE
+   ────────────────────────────────────────────── */
+@layer base {
+  * {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    cursor: default;
+  }
+
+  body {
+    @apply antialiased;
+    background: radial-gradient(circle at 50% 50%, #25282C 0%, var(--black) 100%);
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    cursor: default;
+  }
+
+  /* Allow typing in inputs */
+  input, textarea {
+    user-select: auto;
+    -webkit-user-select: auto;
+    cursor: pointer;
+  }
+
+  /* Interactive elements get pointer */
+  button, a, select, [role="button"], [role="link"], label {
+    cursor: pointer;
+  }
+
+  /* Luxury text selection highlight */
+  ::selection {
+    background: rgba(201, 169, 110, 0.4); /* Champagne Gold with opacity */
+    color: #fff;
+  }
+  ::-moz-selection {
+    background: rgba(201, 169, 110, 0.4);
+    color: #fff;
+  }
+
+  /* Number inputs — clean appearance */
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+}
+
+/* ──────────────────────────────────────────────
+   PRINT / PDF — Watermark always visible
+   ────────────────────────────────────────────── */
+@media print {
+
+  /* Force backgrounds to render in print */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Make the hidden watermark nodes visible in print */
+  .wm-print-show {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 0.12 !important;
+    position: fixed !important;
+    inset: 0;
+    z-index: 99999;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px !important;
+    font-weight: 200;
+    letter-spacing: 0.5em;
+    color: #C9A96E !important;
+    transform: rotate(-30deg) !important;
+    white-space: nowrap;
+  }
+}
+
+/* ──────────────────────────────────────────────
+   CUSTOM UTILITIES
+   ────────────────────────────────────────────── */
+@layer utilities {
+  .font-serif-luxury {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .font-montserrat {
+    font-family: 'Montserrat', 'Inter', sans-serif;
+  }
+
+  .text-gold {
+    color: var(--gold);
+  }
+
+  .text-gold-dim {
+    color: var(--gold-mid);
+  }
+
+  .text-burg {
+    color: var(--burg);
+  }
+
+  .text-dim {
+    color: var(--text-dim);
+  }
+
+  .text-mid {
+    color: var(--text-mid);
+  }
+
+  .border-gold-dim {
+    border-color: var(--gold-mid);
+  }
+
+  .border-burg {
+    border-color: var(--burg);
+  }
+
+  .bg-surface {
+    background: var(--surface);
+  }
+
+  .bg-surface2 {
+    background: var(--surface2);
+  }
+
+  .bg-gold-dim {
+    background: var(--gold-dim);
+  }
+
+  .bg-burg-dim {
+    background: var(--burg-dim);
+  }
+
+  /* Card base */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .card:hover {
+    border-color: var(--gold-mid);
+    transform: translateY(-2px);
+    box-shadow: 0 16px 48px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(201, 169, 110, 0.1);
+  }
+
+  /* Active/Featured card glow */
+  .card-active {
+    box-shadow:
+      0 0 0 1px rgba(201, 169, 110, 0.25),
+      0 0 30px rgba(201, 169, 110, 0.12),
+      0 8px 32px rgba(0, 0, 0, 0.4);
+    border-color: rgba(201, 169, 110, 0.35);
+  }
+
+  /* Luxury alert card */
+  .card-alert {
+    border-color: var(--burg) !important;
+    box-shadow: 0 0 30px var(--burg-glow), inset 0 0 30px rgba(128, 0, 32, 0.05);
+  }
+
+  /* ── KPI Card Overflow Protection ──────────── */
+  .kpi-card {
+    overflow: hidden;
+    /* Absolute containment */
+    min-width: 0;
+    /* Allow flex/grid shrinking */
+    isolation: isolate;
+    /* Stacking context isolation */
+  }
+
+  .kpi-value-container {
+    overflow: hidden;
+    min-width: 0;
+    max-width: 100%;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+  }
+
+  .kpi-value {
+    font-size: clamp(2.25rem, 6vw, 4rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    flex-shrink: 1;
+    font-weight: 800;
+    font-family: 'Montserrat', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .kpi-suffix {
+    font-size: clamp(0.75rem, 2.5vw, 1.25rem);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Gold gradient separator */
+  .sep-gold {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-mid), transparent);
+  }
+
+  /* Pulse for luxury alert badge */
+  .pulse-burg {
+    animation: pulseBurg 4s ease-in-out infinite;
+  }
+
+  @keyframes pulseBurg {
+
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    50% {
+      opacity: 0.5;
+      transform: scale(0.98);
+    }
+  }
+
+  /* Alert entry animation */
+  .alert-entry {
+    animation: alertEntry 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  @keyframes alertEntry {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(-10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  /* Fade-in-up for KPI cards */
+  .fade-up {
+    animation: fadeUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Shimmer on number update */
+  .shimmer {
+    animation: shimmerNum 0.45s ease;
+  }
+
+  @keyframes shimmerNum {
+    0% {
+      opacity: 0.3;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* ── AI Analysis Cards ─────────────────────────── */
+  .analysis-card {
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .analysis-card:hover {
+    transform: translateY(-1px);
+  }
+
+  /* ── Header Text Animations ──────────────────────── */
+  .title-reveal {
+    animation: titleReveal 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    opacity: 0;
+  }
+  
+  .title-reveal-delay {
+    animation: titleReveal 1.6s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+    opacity: 0;
+  }
+
+  @keyframes titleReveal {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+      filter: blur(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  .gold-shimmer-text {
+    background: linear-gradient(
+      90deg,
+      var(--gold) 0%,
+      #FCEFB4 20%,
+      var(--gold) 40%,
+      var(--gold) 100%
+    );
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: goldShimmer 5s linear infinite;
+  }
+
+  @keyframes goldShimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+}

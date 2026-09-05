@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <!-- Background: Deep matte slate/black to match the UI -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#1E1E1E"/>
+      <stop offset="100%" stop-color="#121212"/>
+    </radialGradient>
+
+    <!-- Champagne Gold Gradient for the Building -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#E8D49A"/>
+      <stop offset="40%"  stop-color="#C9A96E"/>
+      <stop offset="100%" stop-color="#8B6A35"/>
+    </linearGradient>
+
+    <!-- Smooth outer glow for luxury feel -->
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── Base Background ── -->
+  <rect width="32" height="32" rx="8" fill="url(#bgGrad)" stroke="#C9A96E" stroke-width="0.3" stroke-opacity="0.3"/>
+
+  <!-- ── Real Estate Minimalist Icon (Golden Towers / Villa) ── -->
+  <g filter="url(#goldGlow)" transform="translate(4, 5)">
+    <!-- Main Tower -->
+    <path d="M12 24 V6 L18 2 L24 6 V24 Z" fill="none" stroke="url(#goldGrad)" stroke-width="1.8" stroke-linejoin="round" />
+    
+    <!-- Secondary structure (Luxury Villa / Extension) -->
+    <path d="M4 24 V14 L12 8" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linejoin="round" opacity="0.85" />
+
+    <!-- Abstract windows / Data blocks (signifying investment intelligence) -->
+    <rect x="14.5" y="9" width="1.5" height="1.5" fill="#C9A96E" />
+    <rect x="18" y="9" width="1.5" height="1.5" fill="#C9A96E" />
+    
+    <rect x="14.5" y="13" width="1.5" height="1.5" fill="#C9A96E" />
+    <rect x="18" y="13" width="1.5" height="1.5" fill="#C9A96E" />
+
+    <rect x="14.5" y="17" width="1.5" height="1.5" fill="#C9A96E" />
+    <rect x="18" y="17" width="1.5" height="1.5" fill="#C9A96E" opacity="0.4" />
+
+    <!-- Floor line (Foundation/Ground) -->
+    <path d="M2 24 H24" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Pulse/Growth indicator (Investment chart line) -->
+  <path d="M6 18 L10 14 L12 16 L17 9" fill="none" stroke="#E8D49A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.7">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="4s" repeatCount="indefinite" />
+  </path>
+
+</svg>

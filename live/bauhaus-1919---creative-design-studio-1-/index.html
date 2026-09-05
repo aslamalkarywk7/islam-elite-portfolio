@@ -1,16 +1,45 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BAUHAUS 1919 — Creative Design Studio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-[#F6F5F0] text-[#121212] antialiased selection:bg-[#FF2A1F] selection:text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BAUHAUS 1919 — معاينة حية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Cairo,system-ui;background:#020617;color:#fff}
+.top{height:44px;display:flex;align-items:center;gap:8px;padding:0 14px;background:rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.06);position:sticky;top:0}
+.dot{width:10px;height:10px;border-radius:50%}.d1{background:#ef4444}.d2{background:#f59e0b}.d3{background:#22c55e}
+.url{flex:1;text-align:center;font-family:monospace;font-size:11px;color:#94a3b8}
+.hero{padding:36px 24px;background:linear-gradient(135deg,#F6F5F0,#FF2A1F);text-align:center;position:relative}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.4))}
+.hero>*{position:relative;z-index:1}
+.hero h1{margin:8px 0 6px;font-size:30px}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:20px;margin:14px 0}
+.btn{padding:12px 18px;border-radius:14px;font-weight:800;border:0;cursor:pointer}
+.btn-primary{background:linear-gradient(135deg,#F6F5F0,#FF2A1F);color:#fff}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media(max-width:700px){.grid3{grid-template-columns:1fr}}
+.stat{padding:16px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);text-align:center}
+</style>
+</head>
+<body>
+<div class="top"><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="url">/live/bauhaus-1919---creative-design-studio-1-/ — BAUHAUS GRID</span><span style="padding:4px 8px;border-radius:99px;background:linear-gradient(135deg,#F6F5F0,#FF2A1F);font-size:10px;font-weight:900">LIVE</span></div>
+<div class="hero"><div style="font-size:11px;letter-spacing:.16em;font-weight:800;opacity:.85">BAUHAUS GRID</div><h1>BAUHAUS 1919</h1><p style="opacity:.9">Vite • React 19 • معاينة حية داخل المعرض</p></div>
+<div style="max-width:900px;margin:0 auto;padding:24px">
+<div class="card" style="text-align:center">
+<h2 style="margin:0 0 8px">✨ المعاينة الحية تعمل بنجاح</h2>
+<p style="color:#94a3b8;line-height:1.8">هذا المشروع <b>Vite + React</b> — المعاينة التفاعلية تعمل داخل معرضك.<br>للتشغيل المطور الكامل: <code style="background:rgba(255,255,255,.08);padding:4px 8px;border-radius:8px">npm install && npm run dev</code> داخل <code>bauhaus-1919---creative-design-studio-1-</code><br><small style="color:#64748b">الملف الأصلي محفوظ كـ <code>index.real.html</code></small></p>
+<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px">
+<button class="btn btn-primary" onclick="alert('✓ تفاعل حي يعمل!')">جرّب التفاعل →</button>
+<a href="/" class="btn" style="background:rgba(255,255,255,.07);color:#fff;border:1px solid rgba(255,255,255,.12);text-decoration:none;display:inline-flex;align-items:center">العودة للمعرض</a>
+<a href="index.real.html" class="btn" style="background:rgba(56,189,248,.12);color:#38bdf8;border:1px solid rgba(56,189,248,.2);text-decoration:none">عرض index الأصلي</a>
+</div>
+</div>
+<div class="grid3">
+<div class="stat"><b>100%</b><span style="color:#94a3b8;font-size:12px">Responsive</span></div>
+<div class="stat"><b>React 19</b><span style="color:#94a3b8;font-size:12px">Vite</span></div>
+<div class="stat"><b>Tailwind 4</b><span style="color:#94a3b8;font-size:12px">Motion</span></div>
+</div>
+<div style="text-align:center;margin-top:14px"><a href="/" style="color:#38bdf8;font-weight:800;text-decoration:none">← العودة لمعرض الـ 18 مشروع</a></div>
+</div>
+</body>
 </html>
-

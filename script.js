@@ -17,7 +17,7 @@ const projects = [
   {
     id: "industrial",
     folder: "industrial-marketplace-platform",
-    cover: "covers/industrial.jpg",
+    cover: "covers/industrial.webp",
     docs: ["live/industrial-marketplace-platform/README.md"],
     title: { ar: "أجماس — منصة الاستثمار الصناعي", en: "Ajmas — Industrial Investment" },
     subtitle: { ar: "سوق صناعي ذكي للمغرب", en: "Morocco Smart Marketplace" },
@@ -32,7 +32,7 @@ const projects = [
   {
     id: "atrium",
     folder: "design-dashboard-pro",
-    cover: "covers/atrium.jpg",
+    cover: "covers/atrium.webp",
     docs: ["live/design-dashboard-pro/README.md"],
     title: { ar: "Atrium — ذكاء السوق الصناعي", en: "Atrium — Industrial OS" },
     subtitle: { ar: "نظام إدارة العطاءات", en: "Bid Management OS" },
@@ -47,7 +47,7 @@ const projects = [
   {
     id: "zenith",
     folder: "zenith-finance",
-    cover: "covers/zenith.jpg",
+    cover: "covers/zenith.webp",
     docs: ["live/zenith-finance/README.md"],
     title: { ar: "Zenith Finance", en: "Zenith Finance" },
     subtitle: { ar: "إدارة ثروات — Neumorphism 2.0", en: "Wealth Management — Soft UI" },
@@ -77,7 +77,7 @@ const projects = [
   {
     id: "audio",
     folder: "audio-engine-pro",
-    cover: "covers/audio.jpg",
+    cover: "covers/audio.webp",
     docs: ["live/audio-engine-pro/README.md"],
     title: { ar: "Audio Engine Pro", en: "Audio Engine Pro" },
     subtitle: { ar: "كونسول مزج صوتي احترافي", en: "Skeuomorphic Mixing Console" },
@@ -92,7 +92,7 @@ const projects = [
   {
     id: "bauhaus",
     folder: "bauhaus-1919---creative-design-studio-1-",
-    cover: "covers/bauhaus.jpg",
+    cover: "covers/bauhaus.webp",
     docs: ["live/bauhaus-1919---creative-design-studio-1-/README.md"],
     title: { ar: "BAUHAUS 1919", en: "BAUHAUS 1919" },
     subtitle: { ar: "استوديو تصميم إبداعي", en: "Creative Design Studio" },
@@ -107,7 +107,7 @@ const projects = [
   {
     id: "maison",
     folder: "luxury-creative-agency",
-    cover: "covers/luxury.jpg",
+    cover: "covers/luxury.webp",
     docs: ["live/luxury-creative-agency/README.md"],
     title: { ar: "MAISON NOIR", en: "MAISON NOIR" },
     subtitle: { ar: "وكالة إبداعية فاخرة", en: "Luxury Creative Agency" },
@@ -122,7 +122,7 @@ const projects = [
   {
     id: "raw",
     folder: "raw-brutalist-creative-studio",
-    cover: "covers/raw.jpg",
+    cover: "covers/raw.webp",
     docs: ["live/raw-brutalist-creative-studio/README.md"],
     title: { ar: "RAW Brutalist Studio", en: "RAW Brutalist Studio" },
     subtitle: { ar: "استوديو Brutalist خام", en: "Neo-Brutalist Studio" },
@@ -137,7 +137,7 @@ const projects = [
   {
     id: "grid",
     folder: "grid-studio---swiss-design-system",
-    cover: "covers/grid.jpg",
+    cover: "covers/grid.webp",
     docs: ["live/grid-studio---swiss-design-system/README.md"],
     title: { ar: "GRID STUDIO — Swiss System", en: "GRID STUDIO — Swiss System" },
     subtitle: { ar: "نظام تصميم سويسري", en: "Swiss Typographic System" },
@@ -167,7 +167,7 @@ const projects = [
   {
     id: "chroma",
     folder: "studio-chroma",
-    cover: "covers/chroma.jpg",
+    cover: "covers/chroma.webp",
     docs: ["live/studio-chroma/README.md"],
     title: { ar: "Studio Chroma", en: "Studio Chroma" },
     subtitle: { ar: "Material 3 Bento Portfolio", en: "Material 3 Bento Portfolio" },
@@ -197,7 +197,7 @@ const projects = [
   {
     id: "analog",
     folder: "analog-antiques",
-    cover: "covers/analog.jpg",
+    cover: "covers/analog.webp",
     docs: ["live/analog-antiques/README.md"],
     title: { ar: "Analog Antiques", en: "Analog Antiques" },
     subtitle: { ar: "أرشيف شرائط كاسيت", en: "Vintage Cassette Archive" },
@@ -212,7 +212,7 @@ const projects = [
   {
     id: "arabicChat",
     folder: "arabic-chat-ui-ux-design-website",
-    cover: "covers/arabic-chat.jpg",
+    cover: "covers/arabic-chat.webp",
     docs: ["live/arabic-chat-ui-ux-design-website/README.md"],
     title: { ar: "شات العرب", en: "Arab Chat Platform" },
     subtitle: { ar: "غرف دردشة عربية RTL", en: "Arabic Chat Rooms RTL" },
@@ -227,7 +227,7 @@ const projects = [
   {
     id: "clinics",
     folder: "clinics-portfolio-design",
-    cover: "covers/clinics.jpg",
+    cover: "covers/clinics.webp",
     docs: ["live/clinics-portfolio-design/readme.md"],
     title: { ar: "عيادات النخبة الطبية", en: "Elite Medical Clinics" },
     subtitle: { ar: "بورتفوليو طبي فاخر", en: "Premium Medical Portfolio" },

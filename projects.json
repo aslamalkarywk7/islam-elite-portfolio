@@ -21,10 +21,10 @@
     {
       "id": "analog",
       "folder": "analog-antiques",
-      "cover": "covers/analog.jpg",
+      "cover": "covers/analog.webp",
       "gallery": [
-        "images/analog-antiques/cassette_tapes_stack_1785274984864.jpg",
-        "images/analog-antiques/classic_turntable_1785274960152.jpg",
+        "images/analog-antiques/cassette_tapes_stack_1785274984864.webp",
+        "images/analog-antiques/classic_turntable_1785274960152.webp",
         "images/analog-antiques/hero_cassette_recorder_1785274936860.jpg"
       ],
       "docs": [
@@ -40,11 +40,11 @@
     {
       "id": "arabicChat",
       "folder": "arabic-chat-ui-ux-design-website",
-      "cover": "covers/arabic-chat.jpg",
+      "cover": "covers/arabic-chat.webp",
       "gallery": [
-        "images/arabic-chat-ui-ux-design-website/5145d5e4-714f-47cf-bf27-0dc634b4895c.jpg",
-        "images/arabic-chat-ui-ux-design-website/Screenshot-2026-03-15-010931.png",
-        "images/arabic-chat-ui-ux-design-website/Screenshot-2026-03-15-011031.png"
+        "images/arabic-chat-ui-ux-design-website/5145d5e4-714f-47cf-bf27-0dc634b4895c.webp",
+        "images/arabic-chat-ui-ux-design-website/Screenshot-2026-03-15-010931.webp",
+        "images/arabic-chat-ui-ux-design-website/Screenshot-2026-03-15-011031.webp"
       ],
       "docs": [
         "docs/arabic-chat-ui-ux-design-website/CUSTOMIZATION_GUIDE.md",
@@ -61,9 +61,9 @@
     {
       "id": "audio",
       "folder": "audio-engine-pro",
-      "cover": "covers/audio.jpg",
+      "cover": "covers/audio.webp",
       "gallery": [
-        "images/audio-engine-pro/mahogany_wood_texture_1785195462366.jpg",
+        "images/audio-engine-pro/mahogany_wood_texture_1785195462366.webp",
         "images/audio-engine-pro/studio_background_1785195448853.jpg"
       ],
       "docs": [
@@ -77,10 +77,10 @@
     {
       "id": "bauhaus",
       "folder": "bauhaus-1919---creative-design-studio-1-",
-      "cover": "covers/bauhaus.jpg",
+      "cover": "covers/bauhaus.webp",
       "gallery": [
-        "images/bauhaus-1919---creative-design-studio-1-/bauhaus_architect_portrait_1785197705462.jpg",
-        "images/bauhaus-1919---creative-design-studio-1-/bauhaus_interior_1785197728511.jpg",
+        "images/bauhaus-1919---creative-design-studio-1-/bauhaus_architect_portrait_1785197705462.webp",
+        "images/bauhaus-1919---creative-design-studio-1-/bauhaus_interior_1785197728511.webp",
         "images/bauhaus-1919---creative-design-studio-1-/bauhaus_structure_1785197717338.jpg"
       ],
       "docs": [
@@ -96,11 +96,11 @@
     {
       "id": "clinics",
       "folder": "clinics-portfolio-design",
-      "cover": "covers/clinics.jpg",
+      "cover": "covers/clinics.webp",
       "gallery": [
-        "images/clinics-portfolio-design/about-1.jpg",
-        "images/clinics-portfolio-design/about-2.jpg",
-        "images/clinics-portfolio-design/about-3.jpg"
+        "images/clinics-portfolio-design/about-1.webp",
+        "images/clinics-portfolio-design/about-2.webp",
+        "images/clinics-portfolio-design/about-3.webp"
       ],
       "docs": [
         "docs/clinics-portfolio-design/readme.md"
@@ -129,11 +129,11 @@
     {
       "id": "atrium",
       "folder": "design-dashboard-pro",
-      "cover": "covers/atrium.jpg",
+      "cover": "covers/atrium.webp",
       "gallery": [
-        "images/design-dashboard-pro/5005bfa2-9b17-4465-8e87-d33cc8a4b66a.jpg",
-        "images/design-dashboard-pro/Screenshot 2026-05-19 104656.png",
-        "images/design-dashboard-pro/Screenshot 2026-05-19 105337.png"
+        "images/design-dashboard-pro/5005bfa2-9b17-4465-8e87-d33cc8a4b66a.webp",
+        "images/design-dashboard-pro/screenshot-20260519-104656.webp",
+        "images/design-dashboard-pro/screenshot-20260519-105337.webp"
       ],
       "docs": [
         "docs/design-dashboard-pro/DOCUMENTATION_AR.md",
@@ -168,7 +168,7 @@
     {
       "id": "grid",
       "folder": "grid-studio---swiss-design-system",
-      "cover": "covers/grid.jpg",
+      "cover": "covers/grid.webp",
       "gallery": [
         "images/grid-studio---swiss-design-system/swiss_studio_desk_1785196585459.jpg"
       ],
@@ -186,11 +186,11 @@
     {
       "id": "industrial",
       "folder": "industrial-marketplace-platform",
-      "cover": "covers/industrial.jpg",
+      "cover": "covers/industrial.webp",
       "gallery": [
-        "images/industrial-marketplace-platform/aeronautics.jpg",
-        "images/industrial-marketplace-platform/agadir.jpg",
-        "images/industrial-marketplace-platform/automotive.jpg"
+        "images/industrial-marketplace-platform/aeronautics.webp",
+        "images/industrial-marketplace-platform/agadir.webp",
+        "images/industrial-marketplace-platform/automotive.webp"
       ],
       "docs": [
         "docs/industrial-marketplace-platform/ARABIC_DOCUMENTATION.md",
@@ -205,9 +205,9 @@
     {
       "id": "maison",
       "folder": "luxury-creative-agency",
-      "cover": "covers/luxury.jpg",
+      "cover": "covers/luxury.webp",
       "gallery": [
-        "images/luxury-creative-agency/agency_portrait_1785186960692.jpg",
+        "images/luxury-creative-agency/agency_portrait_1785186960692.webp",
         "images/luxury-creative-agency/editorial_arch_1785186974708.jpg"
       ],
       "docs": [
@@ -225,7 +225,7 @@
       "gallery": [
         "images/mywebsite/0b357575-7e99-4fe8-88aa-3accc01597b5.jpg",
         "images/mywebsite/0c32a377-a5d4-41a8-b3f7-5c5a24dce177.jpg",
-        "images/mywebsite/1.png"
+        "images/mywebsite/1.webp"
       ],
       "docs": [
         "live/mywebsite/index.html"
@@ -253,11 +253,11 @@
     {
       "id": "raw",
       "folder": "raw-brutalist-creative-studio",
-      "cover": "covers/raw.jpg",
+      "cover": "covers/raw.webp",
       "gallery": [
         "images/raw-brutalist-creative-studio/brutalist_hero_art_1785187841139.jpg",
-        "images/raw-brutalist-creative-studio/brutalist_project_1_1785187853079.jpg",
-        "images/raw-brutalist-creative-studio/brutalist_project_2_1785187866169.jpg"
+        "images/raw-brutalist-creative-studio/brutalist_project_1_1785187853079.webp",
+        "images/raw-brutalist-creative-studio/brutalist_project_2_1785187866169.webp"
       ],
       "docs": [
         "docs/raw-brutalist-creative-studio/CONTRIBUTING.md",
@@ -288,11 +288,11 @@
     {
       "id": "chroma",
       "folder": "studio-chroma",
-      "cover": "covers/chroma.jpg",
+      "cover": "covers/chroma.webp",
       "gallery": [
-        "images/studio-chroma/aura_app_thumbnail_1785193036192.jpg",
-        "images/studio-chroma/lumina_spatial_thumbnail_1785193060089.jpg",
-        "images/studio-chroma/nova_ecommerce_thumbnail_1785193071363.jpg"
+        "images/studio-chroma/aura_app_thumbnail_1785193036192.webp",
+        "images/studio-chroma/lumina_spatial_thumbnail_1785193060089.webp",
+        "images/studio-chroma/nova_ecommerce_thumbnail_1785193071363.webp"
       ],
       "docs": [
         "docs/studio-chroma/ARCHITECTURE.md",
@@ -309,7 +309,7 @@
     {
       "id": "zenith",
       "folder": "zenith-finance",
-      "cover": "covers/zenith.jpg",
+      "cover": "covers/zenith.webp",
       "gallery": [
         "images/zenith-finance/macbook_oak_desk_1785192125819.jpg"
       ],

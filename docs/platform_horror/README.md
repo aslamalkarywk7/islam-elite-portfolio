@@ -46,7 +46,7 @@
 ## 📂 بنية المشروع
 
 ```
-New folder/
+platform_horror/
 ├── index.html      # بنية الصفحة + شاشة الدخول + كل الأقسام
 ├── style.css       # تصميم gothic horror + كل الأنميشن
 ├── script.js        # مولّد اللوحات + التفاعلات + GSAP + Web Audio

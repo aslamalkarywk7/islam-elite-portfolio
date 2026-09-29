@@ -93,25 +93,25 @@ const stats = [
 
 const doctors = [
   {
-    image: "/images/doctor-1.jpg",
+    image: "/images/clinics-portfolio-design/doctor-1.webp",
     specialty: "استشاري قلب",
     name: "د. أحمد المصري",
     title: "بروفيسور أمراض القلب والأوعية الدموية",
   },
   {
-    image: "/images/doctor-2.jpg",
+    image: "/images/clinics-portfolio-design/doctor-2.webp",
     specialty: "استشاري نساء",
     name: "د. فاطمة العتيبي",
     title: "أخصائية أمراض النساء والولادة",
   },
   {
-    image: "/images/doctor-3.jpg",
+    image: "/images/clinics-portfolio-design/doctor-3.webp",
     specialty: "استشاري عظام",
     name: "د. محمد الخالدي",
     title: "أخصائي جراحة العظام والمفاصل",
   },
   {
-    image: "/images/doctor-4.jpg",
+    image: "/images/clinics-portfolio-design/doctor-4.webp",
     specialty: "استشاري أطفال",
     name: "د. سارة الحسيني",
     title: "أخصائية طب وحديثي الولادة",
@@ -119,11 +119,11 @@ const doctors = [
 ]
 
 const galleryItems = [
-  { src: "/images/gallery-1.jpg", title: "صالة الانتظار", desc: "بيئة هادئة ومريحة" },
-  { src: "/images/gallery-2.jpg", title: "غرفة الفحص", desc: "أحدث المعدات الطبية" },
-  { src: "/images/gallery-3.jpg", title: "الممرات الفاخرة", desc: "تصميم معماري راقٍ" },
-  { src: "/images/gallery-4.jpg", title: "غرفة الاستشارة", desc: "خصوصية وراحة تامة" },
-  { src: "/images/gallery-5.jpg", title: "عيادة الأسنان", desc: "تكنولوجيا متطورة" },
+  { src: "/images/clinics-portfolio-design/gallery-1.webp", title: "صالة الانتظار", desc: "بيئة هادئة ومريحة" },
+  { src: "/images/clinics-portfolio-design/gallery-2.webp", title: "غرفة الفحص", desc: "أحدث المعدات الطبية" },
+  { src: "/images/clinics-portfolio-design/gallery-3.webp", title: "الممرات الفاخرة", desc: "تصميم معماري راقٍ" },
+  { src: "/images/clinics-portfolio-design/gallery-4.webp", title: "غرفة الاستشارة", desc: "خصوصية وراحة تامة" },
+  { src: "/images/clinics-portfolio-design/gallery-5.webp", title: "عيادة الأسنان", desc: "تكنولوجيا متطورة" },
 ]
 
 const testimonials = [
@@ -346,7 +346,7 @@ export default function Home() {
               </div>
 
               <div className="hero-image">
-                <img src="/images/hero-doctor.jpg" alt="طبيبة محترفة في عيادات النخبة الطبية" />
+                <img src="/images/clinics-portfolio-design/about-1.webp" alt="طبيبة محترفة في عيادات النخبة الطبية" />
                 <div className="hero-image-card hero-image-card-1">
                   <div className="card-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -380,13 +380,13 @@ export default function Home() {
             <div className="about-grid">
               <div className="about-images fade-in">
                 <div className="about-img">
-                  <img src="/images/about-1.jpg" alt="استقبال العيادة الفاخرة" />
+                  <img src="/images/clinics-portfolio-design/about-1.webp" alt="استقبال العيادة الفاخرة" />
                 </div>
                 <div className="about-img">
-                  <img src="/images/about-2.jpg" alt="فريق الأطباء المتخصصين" />
+                  <img src="/images/clinics-portfolio-design/about-2.webp" alt="فريق الأطباء المتخصصين" />
                 </div>
                 <div className="about-img">
-                  <img src="/images/about-3.jpg" alt="المعدات الطبية المتطورة" />
+                  <img src="/images/clinics-portfolio-design/about-3.webp" alt="المعدات الطبية المتطورة" />
                 </div>
                 <div className="about-experience">
                   <div className="about-experience-num">25+</div>

@@ -305,7 +305,7 @@ industrial-marketplace-platform/
   name: "طنجة المتوسط",       // ← اسم المدينة (سيظهر في الواجهة)
   subtitle: "المنطقة الصناعية اللوجستية", // ← عنوان فرعي
   region: "طنجة - تطوان - الحسيمة",      // ← اسم الجهة
-  image: "/cities/tanger-med.jpg",        // ← مسار الصورة (من مجلد public/)
+  image: "/covers/industrial.webp",        // ← مسار الصورة (من مجلد public/)
   investment: "120",          // ← قيمة الاستثمار بالمليار درهم
   employees: "95K",           // ← عدد الموظفين
   factories: "1100",          // ← عدد المصانع
@@ -349,7 +349,7 @@ industrial-marketplace-platform/
   title: "صناعة السيارات",           // ← الاسم بالعربية
   titleEn: "Automotive Industry",    // ← الاسم بالإنجليزية
   description: "...",                // ← وصف القطاع
-  image: "/sectors/automotive.jpg",  // ← صورة القطاع (في public/sectors/)
+  image: "/covers/industrial.webp",  // ← صورة القطاع (في public/sectors/)
   growth: "+22%",                    // ← نسبة النمو
   investment: "110B",                // ← حجم الاستثمار
   employees: "220K",                 // ← عدد العمال
@@ -1088,8 +1088,8 @@ Type error: Property 'x' does not exist on type 'Y'
 
 ```bash
 # 1. تأكد أن الصور في مجلد public/
-# المسار الصحيح: public/cities/tanger-med.jpg
-# الاستخدام في الكود: image: "/cities/tanger-med.jpg"
+# المسار الصحيح: public/covers/industrial.webp
+# الاستخدام في الكود: image: "/covers/industrial.webp"
 
 # 2. تأكد من صحة اسم الملف (حساس لحالة الأحرف على Linux)
 # ❌ خطأ: tanger-Med.jpg

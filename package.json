@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "node server.js",
     "start": "node server.js",
-    "serve": "node server.js"
+    "serve": "node server.js",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "validate:assets": "node scripts/validate-assets.mjs",
+    "validate": "node scripts/validate-assets.mjs",
+    "test": "node scripts/validate-assets.mjs"
   },
   "dependencies": {
     "express": "^4.21.0"

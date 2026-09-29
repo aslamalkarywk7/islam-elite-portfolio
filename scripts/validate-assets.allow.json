@@ -1,0 +1,6 @@
+[
+  {
+    "pattern": "industrial-marketplace-platform/_next/static/media/",
+    "reason": "Several hashed Cairo/Tajawal font weights are absent from the upstream static export; the browser falls back to the shipped weights. Tracked for a clean re-export (see docs/PERFORMANCE.md)."
+  }
+]

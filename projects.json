@@ -25,7 +25,7 @@
       "gallery": [
         "images/analog-antiques/cassette_tapes_stack_1785274984864.webp",
         "images/analog-antiques/classic_turntable_1785274960152.webp",
-        "images/analog-antiques/hero_cassette_recorder_1785274936860.jpg"
+        "images/analog-antiques/cassette_tapes_stack_1785274984864.webp"
       ],
       "docs": [
         "docs/analog-antiques/CONTRIBUTING.md",
@@ -64,7 +64,7 @@
       "cover": "covers/audio.webp",
       "gallery": [
         "images/audio-engine-pro/mahogany_wood_texture_1785195462366.webp",
-        "images/audio-engine-pro/studio_background_1785195448853.jpg"
+        "covers/audio.webp"
       ],
       "docs": [
         "docs/audio-engine-pro/README.md"
@@ -81,7 +81,7 @@
       "gallery": [
         "images/bauhaus-1919---creative-design-studio-1-/bauhaus_architect_portrait_1785197705462.webp",
         "images/bauhaus-1919---creative-design-studio-1-/bauhaus_interior_1785197728511.webp",
-        "images/bauhaus-1919---creative-design-studio-1-/bauhaus_structure_1785197717338.jpg"
+        "images/bauhaus-1919---creative-design-studio-1-/bauhaus_interior_1785197728511.webp"
       ],
       "docs": [
         "docs/bauhaus-1919---creative-design-studio-1-/CONTRIBUTING.md",
@@ -170,7 +170,7 @@
       "folder": "grid-studio---swiss-design-system",
       "cover": "covers/grid.webp",
       "gallery": [
-        "images/grid-studio---swiss-design-system/swiss_studio_desk_1785196585459.jpg"
+        "covers/grid.webp"
       ],
       "docs": [
         "docs/grid-studio---swiss-design-system/ARCHITECTURE.md",
@@ -208,7 +208,7 @@
       "cover": "covers/luxury.webp",
       "gallery": [
         "images/luxury-creative-agency/agency_portrait_1785186960692.webp",
-        "images/luxury-creative-agency/editorial_arch_1785186974708.jpg"
+        "images/luxury-creative-agency/agency_portrait_1785186960692.webp"
       ],
       "docs": [
         "docs/luxury-creative-agency/README.md"
@@ -221,10 +221,10 @@
     {
       "id": "mywebsite",
       "folder": "mywebsite",
-      "cover": "covers/mywebsite.jpg",
+      "cover": "images/mywebsite/4.webp",
       "gallery": [
-        "images/mywebsite/0b357575-7e99-4fe8-88aa-3accc01597b5.jpg",
-        "images/mywebsite/0c32a377-a5d4-41a8-b3f7-5c5a24dce177.jpg",
+        "images/mywebsite/4.webp",
+        "images/mywebsite/6.webp",
         "images/mywebsite/1.webp"
       ],
       "docs": [
@@ -255,7 +255,7 @@
       "folder": "raw-brutalist-creative-studio",
       "cover": "covers/raw.webp",
       "gallery": [
-        "images/raw-brutalist-creative-studio/brutalist_hero_art_1785187841139.jpg",
+        "images/raw-brutalist-creative-studio/brutalist_project_1_1785187853079.webp",
         "images/raw-brutalist-creative-studio/brutalist_project_1_1785187853079.webp",
         "images/raw-brutalist-creative-studio/brutalist_project_2_1785187866169.webp"
       ],
@@ -273,9 +273,9 @@
       "folder": "retrowave-studio",
       "cover": "covers/retrowave.svg",
       "gallery": [
-        "images/retrowave-studio/brand_identity_thumb_1785274120582.jpg",
-        "images/retrowave-studio/digital_art_thumb_1785274143926.jpg",
-        "images/retrowave-studio/web_design_thumb_1785274131925.jpg"
+        "covers/retrowave.svg",
+        "covers/retrowave.svg",
+        "covers/retrowave.svg"
       ],
       "docs": [
         "docs/retrowave-studio/README.md"
@@ -311,7 +311,7 @@
       "folder": "zenith-finance",
       "cover": "covers/zenith.webp",
       "gallery": [
-        "images/zenith-finance/macbook_oak_desk_1785192125819.jpg"
+        "covers/zenith.webp"
       ],
       "docs": [
         "docs/zenith-finance/CONTRIBUTING.md",

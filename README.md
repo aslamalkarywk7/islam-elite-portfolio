@@ -1,80 +1,84 @@
-# Elite Portfolio — Islam Al-Nashar — 18 Projects Live Preview
+# Elite Portfolio — Islam El-Nashar
 
-**Full Stack • 7 Years • Egypt / Compound • aslamalkarywka+dev@gmail.com • https://github.com/aslamalkarywk7**
+[![ci](https://github.com/aslamalkarywk7/islam-elite-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/aslamalkarywk7/islam-elite-portfolio/actions/workflows/ci.yml)
+![projects](https://img.shields.io/badge/projects-18-blue)
+![license](https://img.shields.io/badge/license-MIT-green)
 
-One gallery showcasing 18 real web projects — each opens **inside the site** with one click, no download, with outer cover and linked docs.
+One gallery showcasing **18 real web projects** — each opens **inside the site** with one click. No downloads, no 404s: every `/live/*` route is served, with a branded fallback preview for any missing path.
 
-## 📁 Linked Docs — All 18 Projects README
+**Full Stack • Egypt • aslamalkarywka+dev@gmail.com • https://github.com/aslamalkarywk7**
 
-This main folder links all original `README.md` files:
+## 🖼️ Gallery
 
-| # | Project | Folder | README | Cover |
-|---|---------|--------|--------|-------|
-| 1 | Aetheria — Glassmorphism 2.0 | `aetheria---glassmorphism-2.0-platform` | [README](docs/aetheria---glassmorphism-2.0-platform/README.md) | `covers/aetheria.svg` |
-| 2 | Analog Antiques | `analog-antiques` | [README](docs/analog-antiques/README.md) | `covers/analog.webp` |
-| 3 | Arab Chat Platform | `arabic-chat-ui-ux-design-website` | [README](docs/arabic-chat-ui-ux-design-website/README.md) | `covers/arabic-chat.webp` |
-| 4 | Audio Engine Pro | `audio-engine-pro` | [README](docs/audio-engine-pro/README.md) | `covers/audio.webp` |
-| 5 | BAUHAUS 1919 | `bauhaus-1919---creative-design-studio-1-` | [README](docs/bauhaus-1919---creative-design-studio-1-/README.md) | `covers/bauhaus.webp` |
-| 6 | Elite Medical Clinics | `clinics-portfolio-design` | [readme](docs/clinics-portfolio-design/readme.md) | `covers/clinics.webp` |
-| 7 | Oman Luxury Dash | `dashboard-website` | [README](docs/dashboard-website/README.md) | `covers/oman.svg` |
-| 8 | Atrium — Industrial OS | `design-dashboard-pro` | [README](docs/design-dashboard-pro/README.md) | `covers/atrium.webp` |
-| 9 | Connective Agency | `flat-design-website` | [README](docs/flat-design-website/README.md) | `covers/flat.svg` |
-| 10 | GRID STUDIO | `grid-studio---swiss-design-system` | [README](docs/grid-studio---swiss-design-system/README.md) | `covers/grid.webp` |
-| 11 | Ajmas — Industrial | `industrial-marketplace-platform` | [README](docs/industrial-marketplace-platform/README.md) | `covers/industrial.webp` |
-| 12 | MAISON NOIR | `luxury-creative-agency` | [README](docs/luxury-creative-agency/README.md) | `covers/luxury.webp` |
-| 13 | Previous Portfolio | `mywebsite` | [index](docs/mywebsite/index.html) | `covers/mywebsite.jpg` |
-| 14 | Horror Gallery | `platform_horror` | [README](docs/platform_horror/README.md) | `covers/horror.svg` |
-| 15 | RAW Brutalist | `raw-brutalist-creative-studio` | [README](docs/raw-brutalist-creative-studio/README.md) | `covers/raw.webp` |
-| 16 | RetroWave Studio | `retrowave-studio` | [README](docs/retrowave-studio/README.md) | `covers/retrowave.svg` |
-| 17 | Studio Chroma | `studio-chroma` | [README](docs/studio-chroma/README.md) | `covers/chroma.webp` |
-| 18 | Zenith Finance | `zenith-finance` | [README](docs/zenith-finance/README.md) | `covers/zenith.webp` |
+| # | Project | Stack | Cover | Live |
+|---|---------|-------|-------|------|
+| 1 | Aetheria — Glassmorphism 2.0 | Vite • React 19 • Tailwind 4 | <img src="covers/aetheria.svg" width="120" alt="Aetheria cover"> | [live/aetheria---glassmorphism-2.0-platform/](live/aetheria---glassmorphism-2.0-platform/) |
+| 2 | Analog Antiques | Vite • React 19 | <img src="covers/analog.webp" width="120" alt="Analog Antiques cover"> | [live/analog-antiques/](live/analog-antiques/) |
+| 3 | Arab Chat Platform (شات العرب) | Next.js • Tailwind 4 | <img src="covers/arabic-chat.webp" width="120" alt="Arab Chat cover"> | [live/arabic-chat-ui-ux-design-website/](live/arabic-chat-ui-ux-design-website/) |
+| 4 | Audio Engine Pro | Vite • React 19 | <img src="covers/audio.webp" width="120" alt="Audio Engine Pro cover"> | [live/audio-engine-pro/](live/audio-engine-pro/) |
+| 5 | BAUHAUS 1919 | Vite • React 19 | <img src="covers/bauhaus.webp" width="120" alt="Bauhaus cover"> | [live/bauhaus-1919---creative-design-studio-1-/](live/bauhaus-1919---creative-design-studio-1-/) |
+| 6 | Elite Medical Clinics (عيادات النخبة) | Next.js | <img src="covers/clinics.webp" width="120" alt="Clinics cover"> | [live/clinics-portfolio-design/](live/clinics-portfolio-design/) |
+| 7 | Oman Luxury Dash | Next.js • Recharts | <img src="covers/oman.svg" width="120" alt="Oman Luxury Dash cover"> | [live/dashboard-website/](live/dashboard-website/) |
+| 8 | Atrium — Industrial OS | Next.js | <img src="covers/atrium.webp" width="120" alt="Atrium cover"> | [live/design-dashboard-pro/](live/design-dashboard-pro/) |
+| 9 | Connective Agency | Vite • React 19 | <img src="covers/flat.svg" width="120" alt="Connective cover"> | [live/flat-design-website/](live/flat-design-website/) |
+| 10 | GRID STUDIO — Swiss System | Vite • React 19 | <img src="covers/grid.webp" width="120" alt="Grid Studio cover"> | [live/grid-studio---swiss-design-system/](live/grid-studio---swiss-design-system/) |
+| 11 | Ajmas — Industrial Marketplace (أجماس) | Next.js • Radix UI | <img src="covers/industrial.webp" width="120" alt="Industrial cover"> | [live/industrial-marketplace-platform/](live/industrial-marketplace-platform/) |
+| 12 | MAISON NOIR | Vite • React 19 | <img src="covers/luxury.webp" width="120" alt="Maison Noir cover"> | [live/luxury-creative-agency/](live/luxury-creative-agency/) |
+| 13 | Previous Portfolio (معرض أعمالي) | HTML • CSS • JS | <img src="images/mywebsite/4.webp" width="120" alt="Previous portfolio screenshot"> | [live/mywebsite/](live/mywebsite/) |
+| 14 | Horror Gallery (معرض الرعب) | HTML • GSAP | <img src="covers/horror.svg" width="120" alt="Horror cover"> | [live/platform_horror/](live/platform_horror/) |
+| 15 | RAW Brutalist Studio | Vite • React 19 | <img src="covers/raw.webp" width="120" alt="Raw Brutalist cover"> | [live/raw-brutalist-creative-studio/](live/raw-brutalist-creative-studio/) |
+| 16 | RetroWave Studio | Vite • React 19 | <img src="covers/retrowave.svg" width="120" alt="RetroWave cover"> | [live/retrowave-studio/](live/retrowave-studio/) |
+| 17 | Studio Chroma | Vite • React 19 | <img src="covers/chroma.webp" width="120" alt="Studio Chroma cover"> | [live/studio-chroma/](live/studio-chroma/) |
+| 18 | Zenith Finance | Vite • React 19 | <img src="covers/zenith.webp" width="120" alt="Zenith Finance cover"> | [live/zenith-finance/](live/zenith-finance/) |
 
-> Every `docs/<folder>/README.md` is linked from the original `../<folder>/README.md` via `projects.json → docs`
-
-## 🖼️ Outer Covers — Linked
-
-Each project has a cover in `covers/` linked via `projects.json → cover`:
-```
-covers/aetheria.svg, analog.jpg, arabic-chat.jpg, atrium.jpg, audio.jpg, bauhaus.jpg, chroma.jpg, clinics.jpg, flat.svg, grid.jpg, horror.svg, industrial.jpg, luxury.jpg, mywebsite.jpg, oman.svg, raw.jpg, retrowave.svg, zenith.jpg
-```
-Change any cover in `projects.json` and the card updates instantly.
-
-## ⚙️ Small Control File
-
-Edit `projects.json` only:
-```json
-{
-  "id": "aetheria",
-  "cover": "covers/aetheria.svg",
-  "docs": ["docs/aetheria---glassmorphism-2.0-platform/README.md"]
-}
-```
-
-## 🔗 Contributions
-
-Linked to https://aslamalkarywk7.github.io/aslamalkarywk7 — `#contributions` section shows live GitHub Stats + iframe.
+> Per-project write-ups live in [`docs/`](docs/) (one folder per project).
 
 ## ▶️ Run
 
 ```bash
-cd islam-portfolio-elite
 npm install
-npm run dev
-# http://localhost:3000
+npm run dev     # http://localhost:3000
 ```
-or `START.bat`
+
+Static hosting works too (see [`vercel.json`](vercel.json) — output directory is `.`):
+any static server serving the repo root exposes the gallery at `/` and demos at `/live/<project>/`.
+
+## 🧰 Scripts
+
+| Command | What it does |
+|---|---|
+| `npm run dev` / `start` / `serve` | Serve the gallery + all live demos (Express, [`server.js`](server.js)) |
+| `npm run optimize:images` | Reproducible WebP pipeline for showcase assets ([`scripts/optimize-images.mjs`](scripts/optimize-images.mjs)) |
+| `npm run validate` / `npm test` | Asset-reference + naming + budget guard ([`scripts/validate-assets.mjs`](scripts/validate-assets.mjs)) — also runs in CI |
 
 ## 📂 Structure
 
 ```
-islam-portfolio-elite/
-├── index.html          ← Main gallery
-├── projects.json       ← Small control file (covers + docs)
-├── covers/             ← 18 outer covers
-├── docs/               ← 18 built projects (real code)
-│   └── <folder>/README.md  ← linked to main
-├── assets/             ← Personal images
-├── script.js / style.css
-└── server.js / vercel.json
+islam-elite-portfolio/
+├── index.html / style.css / script.js   ← gallery shell (reads projects.json)
+├── projects.json                        ← control file: covers, screenshots, docs, live paths
+├── covers/                              ← 18 project covers (WebP/SVG)
+├── images/<project>/                    ← per-project screenshots (WebP)
+├── assets/ / icon/                      ← personal + brand assets
+├── live/<project>/                      ← 18 self-contained runnable demos
+├── docs/<project>/                      ← per-project write-ups + ARCHITECTURE/ASSETS/PERFORMANCE
+├── scripts/                             ← optimize-images, validate-assets (+ allowlist)
+├── .github/workflows/ci.yml             ← install + validate on push/PR
+├── server.js / vercel.json / START.bat
+└── LICENSE (MIT)
 ```
 
+## 📐 Conventions
+
+- **File names:** ASCII lowercase kebab-case, no spaces — enforced by `npm test` (see [`docs/ASSETS.md`](docs/ASSETS.md)).
+- **Images:** WebP (q82, max 1600px) for showcase assets; build output under `live/` is untouched.
+- **Docs:** every project links its write-up via `projects.json → docs`.
+
+## ⚡ Performance
+
+Tracked size **51.6MB → ~21MB** after the WebP migration (showcase images 38.8MB → ~7MB).
+Details + known upstream export gaps: [`docs/PERFORMANCE.md`](docs/PERFORMANCE.md).
+
+## 🤝 Contributions & License
+
+Linked profile: https://aslamalkarywk7.github.io/aslamalkarywk7 — MIT, see [LICENSE](LICENSE).

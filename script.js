@@ -257,7 +257,7 @@ const projects = [
   {
     id: "mywebsite",
     folder: "mywebsite",
-    cover: "covers/mywebsite.jpg",
+    cover: "images/mywebsite/4.webp",
     docs: ["live/mywebsite/index.html"],
     title: { ar: "معرض أعمالي — الإصدار السابق", en: "MyWebsite — Previous Portfolio" },
     subtitle: { ar: "بورتفوليو ثنائي اللغة", en: "Bilingual Portfolio" },

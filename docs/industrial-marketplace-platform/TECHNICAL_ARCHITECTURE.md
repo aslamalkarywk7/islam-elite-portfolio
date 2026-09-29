@@ -416,7 +416,7 @@ const cairo = Cairo({
 import Image from "next/image"
 
 <Image
-  src="/cities/tanger-med.jpg"
+  src="/covers/industrial.webp"
   alt="طنجة المتوسط"
   width={800}
   height={600}

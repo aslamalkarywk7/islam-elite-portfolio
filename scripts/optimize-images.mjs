@@ -87,7 +87,21 @@ for (const src of candidates) {
 }
 
 const rel = (p) => path.relative(ROOT, p).replace(/\\/g, "/");
-const repl = pairs.map(([a, b]) => [rel(a), rel(b)]).sort((x, y) => y[0].length - x[0].length);
+const full = pairs.map(([a, b]) => [rel(a), rel(b)]);
+// Also rewrite path-suffix variants: demo pages reference assets relatively
+// (e.g. `img-website/x/y.png` instead of `live/mywebsite/img-website/x/y.png`).
+const seen = new Map();
+for (const [o, n] of full) {
+  const so = o.split("/"), sn = n.split("/");
+  for (let k = 2; k <= so.length; k++) {
+    const sfx = so.slice(-k).join("/");
+    const nsfx = sn.slice(-k).join("/");
+    if (!seen.has(sfx)) seen.set(sfx, nsfx);
+    else if (seen.get(sfx) !== nsfx) seen.set(sfx, null); // ambiguous: drop
+  }
+}
+const repl = [...seen.entries()].filter(([, v]) => v !== null)
+  .sort((a, b) => b[0].length - a[0].length);
 
 if (!DRY) {
   // 1. rewrite references

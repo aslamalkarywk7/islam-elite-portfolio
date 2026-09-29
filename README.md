@@ -6,7 +6,7 @@
 
 One gallery showcasing **18 real web projects** — each opens **inside the site** with one click. No downloads, no 404s: every `/live/*` route is served, with a branded fallback preview for any missing path.
 
-**Full Stack • Egypt • aslamalkarywka+dev@gmail.com • https://github.com/aslamalkarywk7**
+**Full Stack • Egypt • aslamalkarywka@gmail.com • https://github.com/aslamalkarywk7**
 
 ## 🖼️ Gallery
 

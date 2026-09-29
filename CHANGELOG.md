@@ -5,6 +5,14 @@ All notable changes to this gallery are documented here. Format follows
 
 ## [Unreleased]
 
+### Security
+- `vercel.json`: `X-Frame-Options: ALLOWALL` → `SAMEORIGIN` (+ `nosniff`, `no-referrer`) on all routes.
+- `server.js`: same security headers on all responses (no new deps) + in-memory rate limit for `/api/*` (120 req/min/IP → `429`).
+- Added `SECURITY.md` (reporting, supported versions, unauthenticated demo metrics note).
+
+### Added
+- Root `CONTRIBUTING.md` (setup, per-project rules pointer, PR checklist).
+
 ## [2026-09-29] — Asset hygiene & professional tooling
 
 ### Fixed

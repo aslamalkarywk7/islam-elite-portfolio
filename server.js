@@ -10,7 +10,39 @@ const PARENT = path.join(__dirname, "..");
 const PORT = process.env.PORT || 3000;
 
 const app = express();
+
+// Security headers (mirrors vercel.json) — no new dependencies.
+app.use((req, res, next) => {
+  res.setHeader("X-Content-Type-Options", "nosniff");
+  res.setHeader("X-Frame-Options", "SAMEORIGIN");
+  res.setHeader("Referrer-Policy", "no-referrer");
+  next();
+});
+
 app.use(express.json({ limit: "256kb" }));
+
+// Minimal in-memory rate limiter for /api/*: 120 requests/minute per IP.
+const RATE_WINDOW_MS = 60 * 1000;
+const RATE_MAX = 120;
+const rateStore = new Map();
+app.use("/api", (req, res, next) => {
+  const key = req.ip || req.socket?.remoteAddress || "unknown";
+  const now = Date.now();
+  // Prune expired entries when the table grows, so idle IPs don't leak memory.
+  if (rateStore.size > 1000) {
+    for (const [k, v] of rateStore) if (now > v.reset) rateStore.delete(k);
+  }
+  const entry = rateStore.get(key);
+  if (!entry || now > entry.reset) {
+    rateStore.set(key, { count: 1, reset: now + RATE_WINDOW_MS });
+    return next();
+  }
+  entry.count += 1;
+  if (entry.count > RATE_MAX) {
+    return res.status(429).json({ error: "Too many requests, please try again later." });
+  }
+  next();
+});
 
 // 0) Dashboard-demo backend (mirrors the exported _source API routes).
 //    The static Oman Luxury Dash build calls site-root /api/metrics;

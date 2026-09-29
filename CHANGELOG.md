@@ -34,3 +34,23 @@ All notable changes to this gallery are documented here. Format follows
 - Docs: `docs/ARCHITECTURE.md`, `docs/ASSETS.md`, `docs/PERFORMANCE.md`;
   README rewritten with screenshots gallery, scripts, structure, conventions.
 - `CHANGELOG.md` (this file).
+
+## [2026-09-29] — Runtime repair (browser-verified)
+
+Audited all 18 demos headlessly (HTTP + console + screenshots).
+
+### Fixed
+- Restored the Oman Luxury Dash backend: new `api/_engine.js` (faithful port
+  of the demo's EVM engine + analysis rules), `api/metrics.js` +
+  `api/v1/metrics.js` (Vercel serverless), same contract mounted in
+  `server.js` — demo is fully interactive again (verified CPI/EAC/400s).
+- Rewrote Vite-bundle `/src/assets/*` refs (bauhaus/grid/retrowave/zenith/audio)
+  to verified in-repo twins — all image 404s gone (browser-verified).
+- Dropped all references to the absent arabic-chat chunk
+  (`ff1a16fafef87110.js`, ~100 files) — kills the console `SyntaxError`;
+  landing + sub-pages re-verified visually and via console.
+- Validator now skips fenced code blocks and resolves site-root-absolute refs
+  (`/...`) against the repo root.
+
+### Known benign
+- `/_vercel/insights/script.js` 404s locally; served by Vercel in production.

@@ -2,6 +2,7 @@ import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
 import fs from "fs";
+import { createStore } from "./api/_engine.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -9,6 +10,23 @@ const PARENT = path.join(__dirname, "..");
 const PORT = process.env.PORT || 3000;
 
 const app = express();
+app.use(express.json({ limit: "256kb" }));
+
+// 0) Dashboard-demo backend (mirrors the exported _source API routes).
+//    The static Oman Luxury Dash build calls site-root /api/metrics;
+//    these handlers restore it locally and document the Vercel shape
+//    (see api/metrics.js + api/v1/metrics.js for serverless).
+const metricsStore = createStore();
+function metricsGet(req, res) {
+  const out = metricsStore.get();
+  res.status(out.status).json(out.body);
+}
+function metricsPost(req, res) {
+  const out = metricsStore.post(req.body ?? {});
+  res.status(out.status).json(out.body);
+}
+app.get(["/api/metrics", "/api/v1/metrics"], metricsGet);
+app.post(["/api/metrics", "/api/v1/metrics"], metricsPost);
 
 const PROJECTS_META = {
   "aetheria---glassmorphism-2.0-platform": { title: "Aetheria — Glassmorphism 2.0", kicker: "GLASSMORPHISM 2.0", colors: ["#7c3aed","#06b6d4"], stack: "Vite • React 19 • Tailwind 4" },

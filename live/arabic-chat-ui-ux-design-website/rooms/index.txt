@@ -1,14 +1,14 @@
 1:"$Sreact.fragment"
-2:I[39756,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/ff1a16fafef87110.js","/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
-3:I[37457,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/ff1a16fafef87110.js","/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+2:I[39756,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+3:I[37457,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
 4:I[2355,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/a624b468970d3cc4.js"],"Analytics"]
-5:I[47257,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/ff1a16fafef87110.js","/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"ClientPageRoot"]
+5:I[47257,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"ClientPageRoot"]
 6:I[99195,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/a624b468970d3cc4.js","/live/arabic-chat-ui-ux-design-website/_next/static/chunks/dde1ac35cd54cd20.js","/live/arabic-chat-ui-ux-design-website/_next/static/chunks/9e86ce25a742afe9.js"],"default"]
-9:I[97367,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/ff1a16fafef87110.js","/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+9:I[97367,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 a:"$Sreact.suspense"
-c:I[97367,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/ff1a16fafef87110.js","/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
-e:I[97367,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/ff1a16fafef87110.js","/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
-10:I[68027,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/ff1a16fafef87110.js","/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+c:I[97367,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
+e:I[97367,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
+10:I[68027,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
 :HL["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/40b963b43e95fcb7.css","style"]
 :HL["/live/arabic-chat-ui-ux-design-website/_next/static/media/9ff27b8a0a8f3dc0-s.p.9cb3a3e2.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/live/arabic-chat-ui-ux-design-website/_next/static/media/d41831e24743a3c1-s.p.ae65d18e.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
@@ -16,6 +16,6 @@ e:I[97367,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/ff1a16faf
 7:{}
 8:"$0:f:0:1:1:children:1:children:0:props:children:0:props:serverProvidedParams:params"
 d:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-11:I[27201,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/ff1a16fafef87110.js","/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"IconMark"]
+11:I[27201,["/live/arabic-chat-ui-ux-design-website/_next/static/chunks/d2be314c3ece3fbe.js"],"IconMark"]
 b:null
 f:[["$","title","0",{"children":"شات العرب - غرف دردشة عربية"}],["$","meta","1",{"name":"description","content":"منصة دردشة عربية حديثة للتواصل مع الأصدقاء والمجتمع"}],["$","meta","2",{"name":"generator","content":"v0.app"}],["$","link","3",{"rel":"icon","href":"/icon-light-32x32.png","media":"(prefers-color-scheme: light)"}],["$","link","4",{"rel":"icon","href":"/icon-dark-32x32.png","media":"(prefers-color-scheme: dark)"}],["$","link","5",{"rel":"icon","href":"/icon.svg","type":"image/svg+xml"}],["$","link","6",{"rel":"apple-touch-icon","href":"/apple-icon.png"}],["$","$L11","7",{}]]
